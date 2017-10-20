@@ -2,19 +2,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { AfrobeatRouting } from './app.routing'
 
 import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BaseComponent } from './base/base.component';
+import { MusicPlayerComponent } from './music-player/music-player.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    BaseComponent,
+    MusicPlayerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    RouterModule,
+    AfrobeatRouting
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
