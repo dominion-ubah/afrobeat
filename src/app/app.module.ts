@@ -11,6 +11,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BaseComponent } from './base/base.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
 import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
+import { TvComponent } from './tv/tv.component';
+import { MusicComponent } from './music/music.component';
 
 
 
@@ -20,7 +23,10 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     BaseComponent,
     MusicPlayerComponent,
-    HomeComponent
+    HomeComponent,
+    NewsComponent,
+    TvComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
