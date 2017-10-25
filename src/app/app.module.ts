@@ -19,7 +19,7 @@ import { AdminEntryComponent } from './admin-entry/admin-entry.component';
 import { AdminComponent } from './admin/admin.component';
 
 import { NgxCarouselModule } from 'ngx-carousel';
-
+// import { NgxSoundmanager2Module } from 'ngx-soundmanager2/lib/';
 
 
 @NgModule({
@@ -42,7 +42,8 @@ import { NgxCarouselModule } from 'ngx-carousel';
     MDBBootstrapModule.forRoot(),
     RouterModule,
     AfrobeatRouting,
-    NgxCarouselModule
+    NgxCarouselModule,
+    // NgxSoundmanager2Module
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],

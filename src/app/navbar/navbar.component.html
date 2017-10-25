@@ -1,3 +1,47 @@
-<p>
-  navbar works!
-</p>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark z-depth-0 ">
+  <logo>
+    <a class="navbar-brand" href="#">
+        <img src="../../../images/afblogo.jpg" height="60" alt="">
+  </a>
+  </logo>
+  <links class="main-nav">
+    <ul class="navbar-nav mr-auto main-nav-left ">
+      <li class="nav-item active ">
+        <a class="nav-link waves-light " mdbRippleRadius>Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius>News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius>Music</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius>Live Tv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Celebrities</a>
+      </li>
+    </ul>
+    <span class="navbar-text white-text">
+        <links>
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link waves-light" mdbRippleRadius>I report</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" mdbRippleRadius>login</a>
+    </li>
+    <li class="nav-item">
+      <button class="sign-btn btn btn-danger btn-rounded waves-light " mdbRippleRadius><a class="nav-link white-text"> sign up</a></button>
+    </li>
+    </ul>
+  </links>
+  </span>
+  </links>
+</mdb-navbar>
+<div class="mx-auto search-box border">
+  <form class="form-inline  waves-light" mdbRippleRadius>
+    <input class="form-control mr-sm-2 col-lg-10" type="text" placeholder="Search for news, videos and music">
+    <i class="fa fa-search col-lg-1" aria-hidden="true"></i>
+  </form>
+</div>

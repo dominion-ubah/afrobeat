@@ -15,7 +15,7 @@ export class BaseComponent implements OnInit{
      this.carouselTileItems = [0, 1, 2, 3, 4, 5];
   
      this.carouselTile = {
-       grid: {xs: 2, sm: 3, md: 3, lg: 5, all: 0},
+       grid: {xs: 1, sm: 1, md: 2, lg: 4, all: 0},
        slide: 2,
        speed: 400,
        animation: 'lazy',
