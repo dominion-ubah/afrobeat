@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./music-player.component.scss']
 })
 export class MusicPlayerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  sources: Array<Object>;
+  
+      constructor() {
+          this.sources = [
+              {
+                  src: "http://static.videogular.com/assets/audios/videogular.mp3",
+                  type: "audio/mp3"
+              }
+          ];
+      }
+  
+      ngOnInit() {
+      }
   }
-
-}

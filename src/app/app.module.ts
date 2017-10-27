@@ -19,7 +19,11 @@ import { AdminEntryComponent } from './admin-entry/admin-entry.component';
 import { AdminComponent } from './admin/admin.component';
 
 import { NgxCarouselModule } from 'ngx-carousel';
-// import { NgxSoundmanager2Module } from 'ngx-soundmanager2/lib/';
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+
 
 
 @NgModule({
@@ -43,7 +47,10 @@ import { NgxCarouselModule } from 'ngx-carousel';
     RouterModule,
     AfrobeatRouting,
     NgxCarouselModule,
-    // NgxSoundmanager2Module
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],

@@ -6,6 +6,7 @@ import { BaseComponent } from './base/base.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { AdminEntryComponent } from './admin-entry/admin-entry.component';
 
 const AfrobeatRoutes: Routes = [
     { 
@@ -15,6 +16,13 @@ const AfrobeatRoutes: Routes = [
             { path: "", component: NavbarComponent},
             { path: "", component: MusicPlayerComponent},
             { path: "home", component: HomeComponent},
+
+        ]
+    },
+    {
+        path: "login",
+        component:AdminEntryComponent,
+        children:[
 
         ]
     },
