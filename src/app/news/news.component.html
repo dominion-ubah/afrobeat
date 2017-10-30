@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mb-5">
   <div class="col-lg-8 ml-5">
     <h4 class="ml-5 mt-4">
       News
@@ -8,15 +8,54 @@
     <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
       <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-        <h1>{{Tile + 1}}</h1>
+        <img src="{{Tile}}" height="300px" width="100%" />
       </ngx-tile>
 
       <button NgxCarouselPrev class='leftRs'>&lt;</button>
       <button NgxCarouselNext class='rightRs'>&gt;</button>
     </ngx-carousel>
   </div>
-  <div class="col-lg-3">
+  <div class="col-lg-3 spot-artist">
     <h4>Spotlight Celebrities</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="rounded-circle border prof-pic ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNgEEQUDFesZ7LBb8JkBx79fY7_wwWVQU-UYgIYhfwd-HM4pgeQ" />
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h5>Wizkid Ayo</h5>
+        <p>
+          Wizkid meets wiz kalifa at the airport today with his girlfriend
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="rounded-circle border prof-pic ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tk7grKBQpH1LDzyeXyIBMn4W52L6RC_Ew4bXqoapJbtM3PNVBg" />
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h5>Tonto Dikeh</h5>
+        <p>
+          Wizkid meets wiz kalifa at the airport today with his girlfriend
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="rounded-circle border prof-pic ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhiLIj4hOUe2kY_7PHJLQK2iY_N1lD2JLsgLzjgXIc8vmMNjj" />
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h5>Adekunle Gold</h5>
+        <p>
+          Wizkid meets wiz kalifa at the airport today with his girlfriend
+        </p>
+      </div>
+    </div>
   </div>
 
 </div>

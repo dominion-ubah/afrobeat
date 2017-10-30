@@ -16,18 +16,18 @@ export class TvComponent implements OnInit {
 
       playlist: Array<IMedia> = [
           {
-              title: 'Pale Blue Dot',
+              title: 'Banana Island Ghost --Trailer',
               src: "https://www.youtube.com/embed/iYvjcNkgqw0",
               type: 'video/mp4'
           },
           {
-              title: 'Big Buck Bunny',
-              src: 'http://static.videogular.com/assets/videos/big_buck_bunny_720p_h264.mov',
+              title: 'Wo --OLAMIDE',
+              src: "https://www.youtube.com/embed/j2u5Gbadn7o",
               type: 'video/mp4'
           },
           {
-              title: 'Elephants Dream',
-              src: 'http://static.videogular.com/assets/videos/elephants-dream.mp4',
+              title: 'Mans Not Hot --BIG SHAQ',
+              src: "https://www.youtube.com/embed/3M_5oYU-IsU",
               type: 'video/mp4'
           }
       ];
