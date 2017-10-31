@@ -23,6 +23,8 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminContentComponent } from './admin-content/admin-content.component';
 
 
 
@@ -37,7 +39,9 @@ import {VgBufferingModule} from 'videogular2/buffering';
     TvComponent,
     MusicComponent,
     AdminEntryComponent,
-    AdminComponent
+    AdminComponent,
+    AdminNavComponent,
+    AdminContentComponent
   ],
   imports: [
     BrowserModule,
