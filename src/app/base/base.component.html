@@ -1,16 +1,4 @@
 <div class="base-main mb-5">
   <app-navbar></app-navbar>
-  <div class="container main-carousel">
-    <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
-
-      <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-        <img src="{{Tile}}" height="350px" width="100%" />
-      </ngx-tile>
-
-      <button NgxCarouselPrev class='leftRs'>&lt;</button>
-      <button NgxCarouselNext class='rightRs'>&gt;</button>
-    </ngx-carousel>
-  </div>
-</div>
-<app-home></app-home>
+ <router-outlet></router-outlet>
 <app-music-player></app-music-player>

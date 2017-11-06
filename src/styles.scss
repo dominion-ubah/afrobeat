@@ -53,3 +53,38 @@ span.navbar-toggler-icon {
 .admin-offset {
   margin-top: 6em;
 }
+
+//   the search
+.search-box {
+  width: 80%;
+  margin-top: 6.5em;
+  background-color: grey;
+  border: 1px double rgba(24, 143, 44, 0.1);
+}
+.search-container {
+  padding-top: 1em;
+}
+.search-box i {
+  margin-left: 5.1em;
+  padding-left: 3.5em;
+}
+.search-box .form-control {
+  background-color: rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  padding: 0em 1em;
+  padding-top: 1em;
+  margin: 0;
+  height: 100%;
+  padding-bottom: 1em;
+  border: none;
+}
+.white-text {
+  margin-left: 0.3em;
+}
+.main-socials {
+  padding-left: 4.5em;
+}
+.main-socials i {
+  margin-right: 0.4em;
+}
+

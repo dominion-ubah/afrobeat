@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminCelebMainComponent } from './admin-celeb-main.component';
+import { MainNewsComponent } from './main-news.component';
 
-describe('AdminCelebMainComponent', () => {
-  let component: AdminCelebMainComponent;
-  let fixture: ComponentFixture<AdminCelebMainComponent>;
+describe('MainHomeComponent', () => {
+  let component: MainNewsComponent;
+  let fixture: ComponentFixture<MainNewsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminCelebMainComponent ]
+      declarations: [ MainNewsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminCelebMainComponent);
+    fixture = TestBed.createComponent(MainNewsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

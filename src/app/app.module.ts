@@ -31,6 +31,8 @@ import { AdminMusicMainComponent } from './admin-music-main/admin-music-main.com
 import { AdminCelebMainComponent } from './admin-celeb-main/admin-celeb-main.component';
 import { AdminUsersMainComponent } from './admin-users-main/admin-users-main.component';
 import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.component';
+import { MainHomeComponent } from './main-home/main-home.component';
+import { MainNewsComponent } from './main-news/main-news.component';
 
 
 
@@ -53,7 +55,9 @@ import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.com
     AdminMusicMainComponent,
     AdminCelebMainComponent,
     AdminUsersMainComponent,
-    AdminVideoMainComponent
+    AdminVideoMainComponent,
+    MainHomeComponent,
+    MainNewsComponent
   ],
   imports: [
     BrowserModule,
