@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, Params, ActivatedRoute, } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,12 +8,31 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router,
+              private route: ActivatedRoute ) { }
 
   ngOnInit() {
+    // this.isOnAdmin=false;
+
+  }
+  isOnAdminFunc(){
+    if(this.route.snapshot.url[0]){
+      let url = this.route.snapshot.url[0].path.toString();
+      if (url === "admin"){
+        console.log(url);
+        return true;
+       } else {
+        console.log("no url");
+         return  false;
+       }
+    }
+   
+  
+    
+    
   }
   goToAdmin(){
-    console.log("ole");
   this.router.navigate(['/admin'])
+
   }
 }

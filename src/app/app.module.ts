@@ -23,6 +23,14 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminContentComponent } from './admin-content/admin-content.component';
+import { AdminNewsMainComponent } from './admin-news-main/admin-news-main.component';
+import { AdminTvMainComponent } from './admin-tv-main/admin-tv-main.component';
+import { AdminMusicMainComponent } from './admin-music-main/admin-music-main.component';
+import { AdminCelebMainComponent } from './admin-celeb-main/admin-celeb-main.component';
+import { AdminUsersMainComponent } from './admin-users-main/admin-users-main.component';
+import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.component';
 
 
 
@@ -37,7 +45,15 @@ import {VgBufferingModule} from 'videogular2/buffering';
     TvComponent,
     MusicComponent,
     AdminEntryComponent,
-    AdminComponent
+    AdminComponent,
+    AdminNavComponent,
+    AdminContentComponent,
+    AdminNewsMainComponent,
+    AdminTvMainComponent,
+    AdminMusicMainComponent,
+    AdminCelebMainComponent,
+    AdminUsersMainComponent,
+    AdminVideoMainComponent
   ],
   imports: [
     BrowserModule,
