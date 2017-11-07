@@ -1,0 +1,17 @@
+div.row{
+    border-bottom: 1px solid rgba(233, 100, 22, 0.45);
+}
+i{
+    font-size: 150%;
+    margin-top: 0.4em
+}
+div.row:nth-child(2n){
+    padding-top: 0.4em
+}
+.add-btn{
+    position: absolute;
+    right:20px;
+    top:-45px;
+    font-size: 150%;
+
+}
