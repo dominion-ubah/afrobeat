@@ -17,6 +17,8 @@ import { AdminUsersMainComponent } from './admin-users-main/admin-users-main.com
 import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { MainNewsComponent } from './main-news/main-news.component';
+import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
+import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 
 const AfrobeatRoutes: Routes = [
     { 
@@ -54,7 +56,10 @@ const AfrobeatRoutes: Routes = [
         component:AdminComponent,
         children:[
             {path: "", component: AdminContentComponent, children:[
-                {path: "", component: AdminNewsMainComponent },
+                {path: "", component: AdminNewsMainComponent, children:[
+                    {path: "", component: AdminNewsViewComponent },
+                    {path: "admin-news-category", component: AdminNewsCategoryComponent }
+                ] },
                 {path: "video-admin", component: AdminVideoMainComponent },
                 {path: "tv-admin", component: AdminTvMainComponent }, 
                 {path: "music-admin", component: AdminMusicMainComponent }, 

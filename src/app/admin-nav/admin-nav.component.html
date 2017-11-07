@@ -1,6 +1,6 @@
-<div class="container admin-offset">
+<div class=" admin-offset">
   <!--Navbar-->
-  <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark">
+  <mdb-navbar SideClass=" py-4 navbar navbar-expand-lg navbar-light">
     <!-- Collapsible content -->
     <links>
 
@@ -8,25 +8,41 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
 
-          <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/' ]" routerLinkActive="active"><i class="fa fa-3x fa-newspaper-o"  aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+          <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/' ]" routerLinkActive="active"><i class="fa fa-3x fa-newspaper-o"  aria-hidden="true"></i> 
+            <span class="sr-only">(current)</span></a>
+            <span class="ml-3">
+                News
+              </span>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/music-admin' ]"><i class="fa fa-3x fa-headphones" aria-hidden="true"></i></a>
+          <span class="ml-2">
+              Music
+            </span>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/video-admin' ]"><i class="fa fa-3x fa-film" aria-hidden="true"></i></a>
+          <span class="ml-3">
+              Video
+            </span>
         </li>
 
         <li class="nav-item">
           <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/tv-admin' ]"><i class="fa fa-3x fa-television" aria-hidden="true"></i></a>
-        </li>
+        
+          <span class="ml-4">
+              TV
+            </span></li>
         <li class="nav-item">
           <a class="nav-link waves-light" mdbRippleRadius [routerLink]="[ '/admin/celeb-admin' ]"><i class="fa fa-3x fa-star" aria-hidden="true"></i></a>
+          <span class="">
+              Celebrity
+            </span>
         </li>
 
         <!-- Dropdown -->
         <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbRippleRadius type="button" class="nav-link black dropdown-toggle waves-light" mdbRippleRadius>
+          <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
               <i class="fa fa-3x fa-cogs" aria-hidden="true"></i><span class="caret"></span></a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
             <a class="dropdown-item waves-light" mdbRippleRadius href="#">Action</a>

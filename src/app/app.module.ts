@@ -33,6 +33,8 @@ import { AdminUsersMainComponent } from './admin-users-main/admin-users-main.com
 import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { MainNewsComponent } from './main-news/main-news.component';
+import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
+import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 
 
 
@@ -57,7 +59,9 @@ import { MainNewsComponent } from './main-news/main-news.component';
     AdminUsersMainComponent,
     AdminVideoMainComponent,
     MainHomeComponent,
-    MainNewsComponent
+    MainNewsComponent,
+    AdminNewsViewComponent,
+    AdminNewsCategoryComponent
   ],
   imports: [
     BrowserModule,
