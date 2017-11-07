@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicPlayerComponent implements OnInit {
   sources: Array<Object>;
+  public maxPlayer:boolean;
   
       constructor() {
+          this.maxPlayer = false;
           this.sources = [
               {
                   src: "http://static.videogular.com/assets/audios/videogular.mp3",
@@ -18,5 +20,15 @@ export class MusicPlayerComponent implements OnInit {
       }
   
       ngOnInit() {
+      }
+      togglePlayer(){
+          if(this.maxPlayer){
+              console.log(true ,"to  false")
+              return this.maxPlayer=false;
+
+          }else{
+            console.log(false ,"to  true")
+              return this.maxPlayer = true;
+          }
       }
   }

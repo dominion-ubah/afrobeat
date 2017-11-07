@@ -1,7 +1,14 @@
 .player-container {
-  height: 6em;
+  height: 5em;
+  margin-top: -10em;
   background-color: black;
 }
 .player-container:first-child {
-  padding: 1.5em 4em;
+  padding: -5em 4em -1em 1em;
+  margin-bottom:1em; 
+  transition: 200ms ease-in-out
+}
+.min-player{
+  height: 4em;
+  transition: 200ms ease-in-out
 }
