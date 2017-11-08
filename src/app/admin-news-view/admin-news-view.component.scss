@@ -11,12 +11,23 @@ div.row:nth-child(2n){
 .add-btn{
     position: absolute;
     right:20px;
-    top:-45px;
+    top:-50px;
     font-size: 150%;
 
 }
 i{
     cursor: pointer;
+}
+.searchBar{
+    height:2.5em;
+    width: 100%;
+}
+.searchBar input {width: 100%;}
+.body{
+    border: none !important;
+}
+.searchBar .form-control{
+    padding:0;
 }
 
 .modal .row{
