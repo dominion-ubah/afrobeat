@@ -15,3 +15,20 @@ div.row:nth-child(2n){
     font-size: 150%;
 
 }
+i{
+    cursor: pointer;
+}
+
+.modal .row{
+    border: none;
+}
+.modal-header{
+    background-color: rgba(247, 191, 9, 0.356)
+}
+.md-form label{
+    margin-left:2em; 
+}
+.md-form{
+    padding:0 1em;
+    margin: 0;
+}

@@ -3,5 +3,16 @@ links li {
   margin-left: 4em;
 }
 .admin-offset {
-  margin-top: 5em;
+  margin-top: 4.5em;
+}
+.wave-bg{
+  background-image: url(../../../images/guitar.jpg );
+  background-size: cover;
+}
+mdb-navbar::ng-deep{
+  .navbar{
+    background-image: url(../../../images/waves.jpg );
+    background-size:cover;
+    background-position-y: 20%;
+  }
 }

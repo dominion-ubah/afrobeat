@@ -8,7 +8,16 @@
   margin-bottom:1em; 
   transition: 200ms ease-in-out
 }
+.player-container i.green {
+  transform: rotate(180deg);
+  transition: 600ms ease-in-out
+
+}
 .min-player{
   height: 4em;
   transition: 200ms ease-in-out
+}
+.min-player i.green{
+  transform: rotate(0deg);
+  transition: 600ms ease-in-out
 }
