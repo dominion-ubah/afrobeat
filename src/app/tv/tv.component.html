@@ -1,47 +1,49 @@
-<div class="row mt-5">
+<div class="row tvContent mt-5">
   <div class="col-lg-9 ml-5 mt-5">
-    <h4 class="ml-5 mt-4">
+    <h4 class="ml-3 mt-4">
       Tv
     </h4>
   </div>
-  <div class="col-lg-6 home-components-layout">
-    <div class="" style="height:350px; margin-left:1em;">
-      <vg-player (onPlayerReady)="onPlayerReady($event)">
-        <vg-buffering></vg-buffering>
 
-        <vg-controls>
-          <vg-play-pause></vg-play-pause>
-          <vg-playback-button></vg-playback-button>
+  <div class="row tvPlayer">
+    <div class="col-md-8 home-components-layout">
+      <div class="" style="height:350px; margin-left:1em;">
+        <vg-player (onPlayerReady)="onPlayerReady($event)">
+          <vg-buffering></vg-buffering>
 
-          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-controls>
+            <vg-play-pause></vg-play-pause>
+            <vg-playback-button></vg-playback-button>
 
-          <vg-scrub-bar>
-            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-          </vg-scrub-bar>
+            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
 
-          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+            <vg-scrub-bar>
+              <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+            </vg-scrub-bar>
 
-          <vg-mute></vg-mute>
-          <vg-volume></vg-volume>
+            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
 
-          <vg-fullscreen></vg-fullscreen>
-        </vg-controls>
+            <vg-mute></vg-mute>
+            <vg-volume></vg-volume>
 
-        <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="auto" crossorigin>
-        </video>
-      </vg-player>
+            <vg-fullscreen></vg-fullscreen>
+          </vg-controls>
 
-
+          <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="auto" crossorigin>
+          </video>
+        </vg-player>
+      </div>
     </div>
-  </div>
-  <div class="col-lg-3">
-    <h4>Playlist</h4>
-    <ul>
-      <li *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
-        {{ item.title }}
-      </li>
-    </ul>
+
+    <div class="col-md-3">
+      <h4>Playlist</h4>
+      <ul>
+        <li *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
+          {{ item.title }}
+        </li>
+      </ul>
+    </div>
 
   </div>
 
