@@ -36,7 +36,7 @@ import { MainNewsComponent } from './main-news/main-news.component';
 import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
 import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 
-
+import { SearchPipe } from './shared/pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,8 @@ import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-cat
     MainHomeComponent,
     MainNewsComponent,
     AdminNewsViewComponent,
-    AdminNewsCategoryComponent
+    AdminNewsCategoryComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

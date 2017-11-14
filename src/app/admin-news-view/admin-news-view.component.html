@@ -7,7 +7,7 @@
 <div class="col-md-8 py-0">
     <!-- Search form -->
  <form class="form-inline searchBar float-left py-0 waves-light"  mdbRippleRadius>
-    <input class="form-control mb-5 pt-4" type="text" placeholder="Search by title or category">
+    <input class="form-control mb-5 pt-4" type="text" [(ngModel)]="queryString" name="search" id="search" placeholder="Search by title or category">
   </form>
 </div>
 </div>
@@ -16,60 +16,76 @@
 <div class="row z-depth-3">
   <div class="col">
     <div class="row border black white-text px-5 py-1 z-depth-1 mr-md-1">
-      <div class="col">Categories</div>
+      <div class="col pr-4">Categories</div>
       <div class="col-md-8">Articles</div>
       <div class="col">Actions</div>
-      <i class="fa fa-3x btn-floating add-btn fa-plus red-text" data-toggle="modal" data-target="#basicExample" (click)="demoBasic.show()" mdbRippleRadius aria-hidden="true"></i>
+      <i class="fa fa-3x btn-floating add-btn fa-plus red-text" data-toggle="modal" data-target="#basicExample" (click)="createNewsModal()" mdbRippleRadius aria-hidden="true"></i>
       
     </div>
-    <div class="row">
-        <div class="col">Celebs, Sports</div>
-        <div class="col-md-8">Bobrisky slams down on denrele</div>
-        <div class="col">
-            <i class="fa fa-minus" aria-hidden="true"></i>
-            <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col">Celebs</div>
-          <div class="col-md-8">Davido Buys a hummer jeep for his girlfriend</div>
-          <div class="col">
-              <i class="fa fa-minus" aria-hidden="true"></i>
-              <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
+    <div class="ml-3" *ngFor="let news of newsArray | SearchPipe: queryString; let i = index">
+        <div class="row newsrows wow fadeInRight">
+            <div class="col" >
+                <div *ngFor= "let category of news.categories">
+                        {{category| uppercase}}
+                </div>
+                        
             </div>
-        </div>
-        <div class="row">
-            <div class="col">Sports</div>
-            <div class="col-md-8">Nigeria defeats DPR with a little luck</div>
+            <div class="col-md-8" (click)="newsDetailsModal(news)"><a>{{news.title}}</a></div>
+            <div class="col">
+                <i class="fa fa-minus" (click)="delete(news, i)" aria-hidden="true"></i>
+                <i class="fa fa-pencil-square ml-3" (click)= "editNewsModal(news)" aria-hidden="true"></i>
+              </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col">Celebs, Sports</div>
+            <div class="col-md-8">Bobrisky slams down on denrele</div>
             <div class="col">
                 <i class="fa fa-minus" aria-hidden="true"></i>
                 <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
               </div>
           </div>
           <div class="row">
-              <div class="col">Music, Celebs</div>
-              <div class="col-md-8">Adekunle Gold release another hit</div>
+              <div class="col">Celebs</div>
+              <div class="col-md-8">Davido Buys a hummer jeep for his girlfriend</div>
               <div class="col">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                   <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">Politics</div>
-                <div class="col-md-8">Efcc holds dogara as he tries to leave the country</div>
+            </div> -->
+            <!-- <div class="row">
+                <div class="col">Sports</div>
+                <div class="col-md-8">Nigeria defeats DPR with a little luck</div>
                 <div class="col">
                     <i class="fa fa-minus" aria-hidden="true"></i>
                     <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
                   </div>
               </div>
               <div class="row">
-                  <div class="col">Celebs, Sports</div>
-                  <div class="col-md-8">Segun Obe finally proposes to Kim Adigun</div>
+                  <div class="col">Music, Celebs</div>
+                  <div class="col-md-8">Adekunle Gold release another hit</div>
                   <div class="col">
                       <i class="fa fa-minus" aria-hidden="true"></i>
                       <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col">Politics</div>
+                    <div class="col-md-8">Efcc holds dogara as he tries to leave the country</div>
+                    <div class="col">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                        <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
+                      </div>
+                  </div> -->
+                  <!-- <div class="row">
+                      <div class="col">Celebs, Sports</div>
+                      <div class="col-md-8">Segun Obe finally proposes to Kim Adigun</div>
+                      <div class="col">
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                          <i class="fa fa-pencil-square ml-3" aria-hidden="true"></i>
+                        </div>
+                    </div> -->
+    </div>
+   
   </div>
 </div>
 
@@ -78,56 +94,132 @@
 
 <div mdbModal #demoBasic="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
+        <div class="modal-content" *ngIf="this.newsEntryData">
             <div class="modal-header">
-                <h4 class="modal-title w-100" id="myModalLabel">Post A New Article</h4>
+                <h4 class="modal-title w-100" id="myModalLabel">{{!this.editMode?"Post A New Article": "Edit Current Article"}}</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="demoBasic.hide()">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form>
-                  <div class="row">
+                <!-- <form> -->
+                  <div class="row" >
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">Title (Text)</label>
+                          <input  [(ngModel)]="newsEntryData.title"  #title="ngModel" mdbActive type="text" id="title" class="form-control">
+                          <label for="title" class="">Title (Text)</label>
                       </div>
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">Categories (Select)</label>
+                          <input mdbActive [(ngModel)]="newsEntryData.category" #category="ngModel" name="categories" type="text" id="category" class="form-control">
+                          <label  for="category" class="">Categories (Select)</label>
                       </div>
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">Tags (Text)</label>
+                          <input mdbActive type="text" name="tags" [(ngModel)]="newsEntryData.tags" #tags="ngModel" id="tags" class="form-control">
+                          <label  for="tags"  class="">Tags (Text)</label>
                       </div>
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">Image (File)</label>
+
+                            <!-- <div class="file-field">
+                                    <div class="btn btn-primary btn-sm waves-light" mdbRippleRadius>
+                                      <span>Choose file</span>
+                                      <input type="file"
+                                       mdbFileSelect (uploadOutput)="onUploadOutput($event)" 
+                                       [uploadInput]="uploadInput">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path"
+                                       type="text"[(ngModel)]="this.newsEntryData.mainImage" 
+                                       #mainImage="ngModel"
+                                        name="mainImage"
+                                         placeholder="Upload your file" 
+                                         [value]="showFiles()">
+                                    </div>
+                                  </div> -->
+
+                          <input mdbActive type="text" name="mainImage" [(ngModel)]="this.newsEntryData.mainImage" #image="ngModel" id="image" class="form-control">
+                          <label  for="image"  class="">Image (File)</label>
                       </div>
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">News Content (Select News)</label>
+                          <input mdbActive type="text" id="content" [(ngModel)]="this.newsEntryData.content" #content="ngModel" name="content" class="form-control">
+                          <label   for="content" name="content" class="">News Content (Select News)</label>
                       </div>
                       <div class="md-form col-md-6">
-                          <input mdbActive type="text" id="form1" class="form-control">
-                          <label for="form1" class="">Hot (Select Bool)</label>
+                          <input mdbActive type="text" id="hot" [(ngModel)]="this.newsEntryData.isHot" ngModel  name="isHot" class="form-control">
+                          <label  class="" for="hot">Hot (Select Bool)</label>
                       </div>
                       <!-- <div class="col">
                           <mdb-select [options]="optionsSelect" placeholder="Choose your option"></mdb-select>
                           append date
                           posted by
                       </div> -->
+                      
                   </div>
                   <div class="row">
                       
                   </div>
                     
-                </form>
+                <!-- </form> -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn black btn-sm waves-light" data-dismiss="modal" (click)="demoBasic.hide()" mdbRippleRadius>Close</button>
-                <button type="button" class="btn btn-danger btn-sm waves-light" mdbRippleRadius>Save changes</button>
+                <button type="button" class="btn btn-danger btn-sm waves-light" (click)="formAction(this.newsEntryData)" mdbRippleRadius>Save changes</button>
             </div>
         </div>
     </div>
 </div>
+
+
+<div mdbModal #demoBasic2="mdb-modal" style="overflow: auto" class="modal fade"  id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog"   role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">Article Details...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="demoBasic2.hide()">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body"  *ngIf="this.newsEntryData">
+                        <p>
+                           <strong>ID:</strong>     {{this.newsEntryData.id}} 
+                        </p>
+                        <p>
+                                <strong>NEWS TITLE:</strong>      {{this.newsEntryData.title}} 
+                        </p>
+                        <p>
+                                <strong>DATE CREATED:</strong>     {{this.newsEntryData.dateCreated}}  
+                        </p>
+                        <p>
+                                <strong>CONTENT:</strong>     {{this.newsEntryData.content}}
+                        </p>
+                        <p>
+                                <strong>MAIN IMAGE URL:</strong>    {{this.newsEntryData.mainImage}}
+                        </p>
+                        <p>
+                                <strong>SUB IMAGES URL:</strong>   {{this.newsEntryData.subImages}}
+                        </p>
+                        <p>
+                                <strong>CATEGORIES:</strong>    {{this.newsEntryData.categories}}
+                        </p>
+                        <p>
+                                <strong>TAGS:</strong>    {{this.newsEntryData.tags}}
+                        </p>
+                        <p>
+                                <strong>HOT:</strong>    {{this.newsEntryData.isHot}}
+                        </p>
+                        <p>
+                                <strong>AUTHORED BY:</strong>     {{this.newsEntryData.createdBy}}
+                        </p>
+                        <p>
+                                <strong>SOCIALS:</strong>   {{this.newsEntryData.socials}}
+                        </p>
+                        <p>
+                                <strong>RELATED NEWS:</strong>    {{this.newsEntryData.relatedNews}}
+                        </p>
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn black btn-sm waves-light" data-dismiss="modal" (click)="demoBasic2.hide()" mdbRippleRadius>Close</button>
+                    <button type="button" class="btn btn-danger btn-sm waves-light" (click)="editNewsModal(this.newsEntryData)" mdbRippleRadius>Edit News</button>
+                </div>
+            </div>
+        </div>
+    </div>

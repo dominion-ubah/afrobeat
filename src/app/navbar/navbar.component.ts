@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
     if(this.route.snapshot.url[0]){
       let url = this.route.snapshot.url[0].path.toString();
       if (url === "admin"){
-        console.log(url);
         return true;
        } else {
         console.log("no url");
