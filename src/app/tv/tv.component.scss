@@ -4,28 +4,25 @@ ul {
     padding: 0;
     font-family: sans-serif;
 }
-
 ul li {
     padding: 10px;
     cursor: pointer;
 }
-
 ul li.selected {
     background-color: #dddddd;
 }
-
 ul li:hover {
     background-color: #cce6ee;
 }
-
 .tvContent{
     margin: 50px;
     padding: 5px;
     font-family: "Dosis", sans-serif;
 }
-
 h4{
     font-weight: 600;
     font-size: 28px;
 }
-
+.tvC{
+    margin-top: -3em;
+}
