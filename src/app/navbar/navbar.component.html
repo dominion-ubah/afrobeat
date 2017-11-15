@@ -1,29 +1,29 @@
 <div class="container" *ngIf="!isOnAdminFunc()">
-  <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
-    <logo>
-      <a class="navbar-brand" href="#">
-              <img src="../../assets/pictures/afblogoblk.png" height="38px" alt="">
-        </a>
-    </logo>
-    <links class="main-nav">
-      <ul class="navbar-nav mr-auto main-nav-left ">
-        <li class="nav-item ">
-          <a class="nav-link waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" [routerLink]="[ '/news/' ]" mdbRippleRadius>News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbRippleRadius>Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbRippleRadius>Live Tv</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Celebrities</a>
-        </li>
-      </ul>
-      <span class="navbar-text white-text">
+    <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
+        <logo>
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/pictures/afblogoblk.png" height="38px" alt="">
+            </a>
+        </logo>
+        <links class="main-nav">
+            <ul class="navbar-nav mr-auto main-nav-left ">
+                <li class="nav-item ">
+                    <a class="nav-link waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" [routerLink]="[ '/news/' ]" mdbRippleRadius>News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" [routerLink]="[ '/music/' ]" mdbRippleRadius>Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbRippleRadius>Live Tv</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Celebrities</a>
+                </li>
+            </ul>
+            <span class="navbar-text white-text">
               <links>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -35,21 +35,18 @@
           </ul>
         </links>
         </span>
-    </links>
-  </mdb-navbar>
+        </links>
+    </mdb-navbar>
 </div>
 
 <div class="container" *ngIf="isOnAdminFunc()">
-  <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
-    <logo>
-      <a class="navbar-brand" href="#">
+    <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
+        <logo>
+            <a class="navbar-brand" href="#">
                 <img src="../../../images/afblogoblk.png" height="38px" alt="">
-          </a>
-      <h4 class="float-right white-text" style="margin-top:0.4em">Admin</h4>
-    </logo>
+            </a>
+            <h4 class="float-right white-text" style="margin-top:0.4em">Admin</h4>
+        </logo>
 
-  </mdb-navbar>
+    </mdb-navbar>
 </div>
-
-
-

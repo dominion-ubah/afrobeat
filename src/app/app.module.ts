@@ -38,6 +38,9 @@ import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-cat
 
 import { SearchPipe } from './shared/pipes/search.pipe';
 import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
+import { MainMusicComponent } from './main-music/main-music.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { ArtistsComponent } from './artists/artists.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,10 @@ import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.com
     AdminNewsViewComponent,
     AdminNewsCategoryComponent,
     SearchPipe,
-    MainNewsDetailComponent
+    MainNewsDetailComponent,
+    MainMusicComponent,
+    AlbumsComponent,
+    ArtistsComponent
   ],
   imports: [
     BrowserModule,
