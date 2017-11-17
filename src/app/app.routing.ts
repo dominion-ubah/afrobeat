@@ -19,6 +19,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { MainNewsComponent } from './main-news/main-news.component';
 import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
 import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
+import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
 
 const AfrobeatRoutes: Routes = [
     { 
@@ -38,9 +39,21 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "news",
                 component: MainNewsComponent,
-                children: [
-
-                ]
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "news-detail",
+                component: MainNewsDetailComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
             }
         ]
     },
