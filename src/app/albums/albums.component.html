@@ -1,3 +1,23 @@
-<p>
-  albums works!
-</p>
+<div class="music-main">
+    <div class="row mt-5 ">
+        <div class="col-lg-8 ml-5">
+            <h4 class="ml-3 mt-4">
+                Albums
+            </h4>
+        </div>
+        <div class="col-lg-8 home-components-layout">
+            <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
+
+                <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                    <a [routerLink]="[ '/album-detail/' ]">
+                        <img src="{{Tile}}" height="250px" width="100%" />
+                    </a>
+                </ngx-tile>
+
+                <button NgxCarouselPrev class='leftRs'>&lt;</button>
+                <button NgxCarouselNext class='rightRs'>&gt;</button>
+            </ngx-carousel>
+        </div>
+    </div>
+
+</div>

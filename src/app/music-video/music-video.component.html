@@ -2,14 +2,14 @@
     <div class="row tvContent mt-1 ">
         <div class="col-md-9 ml-lg-5">
             <h4 class="ml-3 mt-4">
-                Tv
+                Music Videos
             </h4>
         </div>
     </div>
 
     <div class="row  tvC ">
         <div class="col-md-7  home-components-layout">
-            <div class="" style="">
+            <div class="">
                 <vg-player (onPlayerReady)="onPlayerReady($event)">
                     <vg-buffering></vg-buffering>
                     <vg-controls>
@@ -26,7 +26,7 @@
                         <vg-fullscreen></vg-fullscreen>
                     </vg-controls>
                     <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="auto" crossorigin>
-                </video>
+                        </video>
                 </vg-player>
             </div>
         </div>
@@ -39,5 +39,4 @@
             </ul>
         </div>
     </div>
-
 </div>

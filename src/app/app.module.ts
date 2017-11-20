@@ -3,7 +3,10 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AfrobeatRouting } from './app.routing'
+import { AfrobeatRouting } from './app.routing';
+// import { CoreModule } from './core/core.module';
+import { LoadingModule, ANIMATION_TYPES } from 'ngx-loading';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -41,6 +44,11 @@ import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.com
 import { MainMusicComponent } from './main-music/main-music.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { ArtistsComponent } from './artists/artists.component';
+import { AlbumComponent } from './album/album.component';
+import { ArtistComponent } from './artist/artist.component';
+import { MusicVideoComponent } from './music-video/music-video.component';
+import { MusicHomeComponent } from './music-home/music-home.component';
+import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +78,12 @@ import { ArtistsComponent } from './artists/artists.component';
     MainNewsDetailComponent,
     MainMusicComponent,
     AlbumsComponent,
-    ArtistsComponent
+    ArtistsComponent,
+    AlbumComponent,
+    ArtistComponent,
+    MusicVideoComponent,
+    MusicHomeComponent,
+    MusicPlayerPageComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +96,9 @@ import { ArtistsComponent } from './artists/artists.component';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    LoadingModule,
+    LoadingBarRouterModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
