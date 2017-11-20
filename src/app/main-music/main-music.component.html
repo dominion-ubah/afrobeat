@@ -1,5 +1,4 @@
 <div class="base-main">
-
     <div class="search-container">
         <div class="mx-auto search-box">
             <form class="form-inline  waves-light" mdbRippleRadius>
@@ -8,16 +7,14 @@
             </form>
         </div>
     </div>
-
-
     <div class="row ">
         <div class="col-lg-9">
 
         </div>
         <div class="col-lg-3 main-socials mt-3 float-right">
             <span styele="font-weight:800;">
-              FOLLOW US:
-            </span>
+                    FOLLOW US:
+                  </span>
             <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
             <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-2x fa-youtube-play" aria-hidden="true"></i>
@@ -30,7 +27,9 @@
         <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
             <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                <img src="{{Tile}}" height="350px" width="100%" />
+                <a [routerLink]="[ '/song/' ]">
+                    <img src="{{Tile}}" height="350px" width="100%" />
+                </a>
             </ngx-tile>
 
             <button NgxCarouselPrev class='leftRs'>&lt;</button>
@@ -39,4 +38,10 @@
     </div>
 </div>
 
-<app-home></app-home>
+
+
+
+
+
+<app-music-home>
+</app-music-home>

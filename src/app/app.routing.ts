@@ -21,6 +21,9 @@ import { MainMusicComponent } from './main-music/main-music.component';
 import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
 import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
+import { AlbumComponent } from './album/album.component';
+import { ArtistComponent } from './artist/artist.component';
+import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
 
 const AfrobeatRoutes: Routes = [
     { 
@@ -60,6 +63,33 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "news-detail",
                 component: MainNewsDetailComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "artist-detail",
+                component: ArtistComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "album-detail",
+                component: AlbumComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "song",
+                component: MusicPlayerPageComponent,
                 // children: [
                 //     {
                 //         
