@@ -4,12 +4,12 @@
             News
         </h4>
     </div>
-    <div class="col-lg-8 home-components-layout">
+    <div class="col-md-8 home-components-layout">
         <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
             <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
                 <a [routerLink]="[ '/news-detail/' ]">
-                    <img src="{{Tile}}" height="250px" width="100%" />
+                    <img src="{{Tile}}" height="200px" width="100%" />
                 </a>
             </ngx-tile>
 
@@ -17,7 +17,7 @@
             <button NgxCarouselNext class='rightRs'>&gt;</button>
         </ngx-carousel>
     </div>
-    <div class="col-lg-3 spot-artist">
+    <div class="col-md-3 spot-artist">
         <h3 style="margin-bottom: 10px;">Spotlight Celebrities</h3>
         <div>
             <hr>
