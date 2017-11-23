@@ -8,8 +8,8 @@
             </div>
         </div>
 
-        <div class="row ml-md-2 tvC ">
-            <div class="col-md-8  home-components-layout">
+        <div class="row ml-md-2 tvC">
+            <div class="col-md-8 col-sm-12 col-xs-12 home-components-layout">
                 <div class="" style="">
                     <vg-player (onPlayerReady)="onPlayerReady($event)">
                         <vg-buffering></vg-buffering>
@@ -31,7 +31,7 @@
                     </vg-player>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <h4>Playlist</h4>
                 <ul>
                     <li *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">

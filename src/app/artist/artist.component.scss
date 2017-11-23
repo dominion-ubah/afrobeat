@@ -4,7 +4,36 @@
     font-family: "Dosis", sans-serif;
 }
 
+h2{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+a:active{
+    text-decoration: none;
+    color: red;
+}
+
+.active{
+    text-decoration: none;
+    color: red;
+}
+
 h4 {
     font-weight: 600;
     font-size: 28px;
+}
+
+.artistPage{
+    margin-top: 110px;
+    font-family: "Dosis", sans-serif;
 }

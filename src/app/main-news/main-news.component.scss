@@ -20,13 +20,6 @@ h1{
     text-transform: uppercase;
 }
 
-.side-news img{
-    width: 20px;
-    height: 20px;
-
-
-}
-
 .fa-heart{
     color: #ff4444;
     font-size: 20px;
@@ -52,4 +45,19 @@ h1{
 .card-body{
 
     margin-bottom: 0;
+}
+
+.sideNews{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+
+.sideNews h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.sideNews ul li a{
+    margin: 10px;
+    font-weight: 600;
 }
