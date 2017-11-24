@@ -16,20 +16,35 @@ export class TvComponent implements OnInit {
 
       playlist: Array<IMedia> = [
           {
-              title: 'Banana Island Ghost --Trailer',
-              src: "https://www.youtube.com/embed/iYvjcNkgqw0",
+              title: 'The Wedding Party 2 Trailer',
+              src: "../../assets/videos/The%20Wedding%20Party%202%20-%20Trailer%20-%20YouTube.MP4",
               type: 'video/mp4'
           },
           {
-              title: 'Wo --OLAMIDE',
-              src: "https://www.youtube.com/embed/j2u5Gbadn7o",
+              title: 'WizKid - MANYA',
+              src: "../../assets/videos/WIZKID%20-%20MANYA%20%5BOfficial%20VIDEO%5D%20-%20YouTube.MP4",
               type: 'video/mp4'
           },
           {
-              title: 'Mans Not Hot --BIG SHAQ',
-              src: "https://www.youtube.com/embed/3M_5oYU-IsU",
+              title: 'Wizkid and Ebro Darden On Beats',
+              src: "../../assets/videos/Wizkid%20and%20Ebro%20Darden%20On%20Beats%201%20%5BExcerpt%5D%20-%20YouTube.MP4",
               type: 'video/mp4'
-          }
+          },
+          {
+              title: 'Davido -- FIA',
+              src: "../../assets/videos/Davido%20-%20FIA%20(Official%20Video)%20%5B720p%5D.mp4",
+              type: 'video/mp4'
+          },
+          {
+              title: 'Davido -- LIKE DAT',
+              src: "../../assets/videos/Davido%20-%20Like%20Dat%20(Official%20Video)%20%5B720p%5D.mp4",
+              type: 'video/mp4'
+          },
+          {
+              title: 'WIZKID Live Performance-Royal Albert Hall London 2017',
+              src: "../../assets/videos/WIZKID%20Live%20Performance%20-%20Royal%20Albert%20Hall,%20London%202017%20-%20YouTube.MP4",
+              type: 'video/mp4'
+          },
       ];
   
       currentIndex = 0;
