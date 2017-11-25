@@ -8,3 +8,93 @@ h4 {
     font-weight: 600;
     font-size: 28px;
 }
+.NewsNav li a{
+    color: grey;
+    font-weight: bold;
+    font-size: large;
+}
+.NewsNav li a:active{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width: 575px) {
+    .music-main-page{
+        margin: 15px;
+        padding: 2px;
+    }
+
+    .home-components-layout{
+        margin-left: 0;
+    }
+
+    img{
+        height: 250px;
+        width: 100%;
+    }
+    .NewsNav li a{
+        color: grey;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    .NewsNav li a:active{
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .music-main-page{
+        margin: 15px;
+        padding: 2px;
+
+
+    }
+
+    .home-components-layout{
+        margin-left: 0;
+    }
+
+    img{
+        height: 250px;
+        width: 100%;
+    }
+    .NewsNav li a{
+        color: grey;
+        font-weight: bold;
+        font-size: x-small;
+    }
+
+    .NewsNav li a:hover{
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+
+
+    .NewsNav li a:active{
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

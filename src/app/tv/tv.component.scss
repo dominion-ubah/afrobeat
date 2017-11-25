@@ -44,3 +44,50 @@ h4 {
     font-family: "Dosis", sans-serif;
     background-color: rgba(13, 59, 189, 0.1);
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .tvContent{
+        margin: 5px;
+        padding: 2px;
+    }
+
+    .home-components-layout{
+        margin-left: 0;
+    }
+
+    vg-player{
+        margin-top: 25px;
+        height: 250px;
+        width: auto;
+
+
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .tvContent{
+        margin: 5px;
+        padding: 2px;
+    }
+
+    .home-components-layout{
+        margin-left: 0;
+    }
+
+    vg-player{
+        margin-top: 25px;
+        height: 200px;
+        width: auto;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
