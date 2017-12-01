@@ -49,6 +49,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { MusicVideoComponent } from './music-video/music-video.component';
 import { MusicHomeComponent } from './music-home/music-home.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { MusicPlayerPageComponent } from './music-player-page/music-player-page.
     ArtistComponent,
     MusicVideoComponent,
     MusicHomeComponent,
-    MusicPlayerPageComponent
+    MusicPlayerPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

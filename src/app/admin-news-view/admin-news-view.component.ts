@@ -13,6 +13,7 @@ export class AdminNewsViewComponent implements OnInit {
   @ViewChild("demoBasic") demoBasic;
   @ViewChild("demoBasic2") demoBasic2;
 public newsEntryData:any;
+public queryString;
 public emptyNews;
 public editMode:boolean;
 public searchableNewsOptions;
