@@ -21,23 +21,13 @@ export class TvComponent implements OnInit {
               type: 'video/mp4'
           },
           {
-              title: 'WizKid - MANYA',
-              src: "../../assets/videos/WIZKID%20-%20MANYA%20%5BOfficial%20VIDEO%5D%20-%20YouTube.MP4",
+              title: 'UNCLE COME AND SEE - Latest Emmanuella MarkAngelComedy FT Agozie Episode 135',
+              src: "../../assets/videos/UNCLE%20COME%20AND%20SEE%20-%20--%20(Latest%20Emmanuella%20MarkAngelComedy%20FT%20Agozie)%20(Episode%20135)%20%5B360p%5D.mp4",
               type: 'video/mp4'
           },
           {
               title: 'Wizkid and Ebro Darden On Beats',
               src: "../../assets/videos/Wizkid%20and%20Ebro%20Darden%20On%20Beats%201%20%5BExcerpt%5D%20-%20YouTube.MP4",
-              type: 'video/mp4'
-          },
-          {
-              title: 'Davido -- FIA',
-              src: "../../assets/videos/Davido%20-%20FIA%20(Official%20Video)%20%5B720p%5D.mp4",
-              type: 'video/mp4'
-          },
-          {
-              title: 'Davido -- LIKE DAT',
-              src: "../../assets/videos/Davido%20-%20Like%20Dat%20(Official%20Video)%20%5B720p%5D.mp4",
               type: 'video/mp4'
           },
           {

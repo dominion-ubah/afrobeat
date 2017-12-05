@@ -1,4 +1,4 @@
-.music-main-page {
+.music-main{
     margin: 50px;
     padding: 5px;
     font-family: "Dosis", sans-serif;
@@ -7,16 +7,40 @@
 h4 {
     font-weight: 600;
     font-size: 28px;
+    font-family: "Dosis", sans-serif;
 }
-.NewsNav li a{
-    color: grey;
-    font-weight: bold;
-    font-size: large;
-}
-.NewsNav li a:active{
-    color: red;
-    font-weight: bold;
-    font-size: large;
+.NewsNav{
+    a:link {
+        color: grey;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: grey;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: darkred;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: darkred;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 575px) {

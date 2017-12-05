@@ -12,18 +12,24 @@
 
         </div>
         <div class="col-md-3 main-socials mt-3 float-right col-sm-12 col-xs-12">
-            <span styele="font-weight:800;">
+            <span style="font-weight:600;">
                 FOLLOW US:
               </span>
-            <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
-            <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-2x fa-youtube-play" aria-hidden="true"></i>
+            <!--Facebook-->
+            <a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+
+            <!--Twitter-->
+            <a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+
+            <!--Instagram-->
+            <a class="icons-sm ins-ic"><i class="fa fa-instagram"></i></a>
+
         </div>
 
 
     </div>
 
-    <div class="container main-carousel">
+    <div class="container main-carousel ml-md-5 mr-md-5">
         <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
             <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
@@ -38,9 +44,6 @@
         </ngx-carousel>
     </div>
 </div>
-
-
-
 
 
 

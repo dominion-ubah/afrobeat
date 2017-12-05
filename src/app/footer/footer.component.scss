@@ -1,0 +1,38 @@
+.mainFooter{
+  background-color: black;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.footerContents{
+  font-family: "Dosis", sans-serif;
+  color: white;
+  padding-top: 50px;
+
+}
+
+
+.footerContents{
+  a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}

@@ -1,14 +1,14 @@
 <div class="tvPge">
     <div class="box">
         <div class="row tvContent mt-1 ">
-            <div class="col-md-9 ml-md-5">
+            <div class="col-md-9 ml-md-1">
                 <h4 class=" mt-4">
-                    Tv
+                    TV
                 </h4>
             </div>
         </div>
 
-        <div class="row ml-md-2 tvC">
+        <div class="row ml-md-1 tvC">
             <div class="col-md-8 col-sm-12 col-xs-12 home-components-layout">
                 <div class="" style="">
                     <vg-player (onPlayerReady)="onPlayerReady($event)">
@@ -31,10 +31,9 @@
                     </vg-player>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12 col-xs-12">
-                <h4>Playlist</h4>
+            <div class="col-md-3 playList col-sm-12 col-xs-12">
                 <ul>
-                    <li *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
+                    <li class="hoverable" *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
                         {{ item.title }}
                     </li>
                 </ul>
