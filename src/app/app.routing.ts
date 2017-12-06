@@ -19,6 +19,8 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { MainNewsComponent } from './main-news/main-news.component';
 import { MainMusicComponent } from './main-music/main-music.component';
 import { MainTvComponent } from './main-tv/main-tv.component';
+import { MainEventsComponent } from './main-events/main-events.component';
+import { MainCelebsComponent } from './main-celebs/main-celebs.component';
 import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
 import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
@@ -64,6 +66,26 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "tv",
                 component: MainTvComponent,
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "celebs",
+                component: MainCelebsComponent,
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "events",
+                component: MainEventsComponent,
                 // children: [
                 //     {
                 //         path: "news-detail",
