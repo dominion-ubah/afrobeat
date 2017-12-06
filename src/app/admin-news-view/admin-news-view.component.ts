@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { News } from '../shared/news'
-import { Socials } from '../shared/news'
-import { Comment } from '../shared/news'
+// import { News } from '../shared/news'
+// import { Socials } from '../shared/news'
+// import { Comment } from '../shared/news'
 
 @Component({
   selector: 'app-admin-news-view',

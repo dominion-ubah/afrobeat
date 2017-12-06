@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// import { ToastService } from './typescripts/pro/alerts';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent implements OnInit {
-  public loading;
-  contructor(){
-    this.loading = true;
+  selector: 'mdb-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css']
 
-  }
-  ngOnInit() {
-    setTimeout(() => { this.loading = false; }, 5000);
-  }
+})
+
+export class AppComponent {
 }

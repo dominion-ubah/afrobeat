@@ -1,4 +1,4 @@
-import { Router, Routes, RouterModule, ActivatedRoute, PreloadAllModules } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -7,7 +7,7 @@ import { MusicPlayerComponent } from './music-player/music-player.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminEntryComponent } from './admin-entry/admin-entry.component'; // make useful
-import { AdminNavComponent } from './admin-nav/admin-nav.component';
+// import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminContentComponent } from './admin-content/admin-content.component';
 import { AdminNewsMainComponent } from './admin-news-main/admin-news-main.component';
 import { AdminTvMainComponent } from './admin-tv-main/admin-tv-main.component';
@@ -29,7 +29,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
 
 const AfrobeatRoutes: Routes = [
-    { 
+    {
         path: "",
         component: BaseComponent,
         children:[

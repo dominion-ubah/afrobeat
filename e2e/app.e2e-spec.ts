@@ -1,10 +1,10 @@
-import { TestAppPage } from './app.po';
+import { QuickstartAngular2Page } from './app.po';
 
-describe('test-app App', () => {
-  let page: TestAppPage;
+describe('quickstart-angular2 App', () => {
+  let page: QuickstartAngular2Page;
 
   beforeEach(() => {
-    page = new TestAppPage();
+    page = new QuickstartAngular2Page();
   });
 
   it('should display message saying app works', () => {

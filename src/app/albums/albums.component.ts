@@ -57,7 +57,9 @@ export class AlbumsComponent implements OnInit {
     }
   }
  
-  public carouselTileLoad(evt: any) {
+  public carouselTileLoad(
+    // evt: any
+  ) {
     
        const len = this.carouselTileItems.length
        if (len <= 4) {

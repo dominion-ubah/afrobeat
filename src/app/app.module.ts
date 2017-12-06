@@ -1,16 +1,20 @@
+import { ToastModule } from './typescripts/pro/alerts/toast/toast.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AfrobeatRouting } from './app.routing';
-// import { CoreModule } from './core/core.module';
-import { LoadingModule, ANIMATION_TYPES } from 'ngx-loading';
-import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import 'hammerjs';
 
+import { MDBBootstrapModule } from './typescripts/free';
+import { MDBBootstrapModulePro } from './typescripts/pro/index';
+import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MDBSpinningPreloader } from './typescripts/pro/index';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { BaseComponent } from './base/base.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
@@ -101,9 +105,17 @@ import { TvSeriesComponent } from './tv-series/tv-series.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    ToastModule.forRoot(),
     MDBBootstrapModule.forRoot(),
+    MDBBootstrapModulePro.forRoot(),
+    NgbModule.forRoot(),
+    AgmCoreModule.forRoot({
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
+      apiKey: 'Your_api_key'
+    }),
     RouterModule,
     AfrobeatRouting,
     NgxCarouselModule,
@@ -111,11 +123,9 @@ import { TvSeriesComponent } from './tv-series/tv-series.component';
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    LoadingModule,
-    LoadingBarRouterModule
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [MDBSpinningPreloader],
+  bootstrap: [AppComponent],
+  schemas:      [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
