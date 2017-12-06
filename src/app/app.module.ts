@@ -50,6 +50,12 @@ import { MusicVideoComponent } from './music-video/music-video.component';
 import { MusicHomeComponent } from './music-home/music-home.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainTvComponent } from './main-tv/main-tv.component';
+import { MainCelebsComponent } from './main-celebs/main-celebs.component';
+import { MainEventsComponent } from './main-events/main-events.component';
+import { MoviesComponent } from './movies/movies.component';
+import { InterviewsComponent } from './interviews/interviews.component';
+import { TvSeriesComponent } from './tv-series/tv-series.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +91,13 @@ import { FooterComponent } from './footer/footer.component';
     MusicVideoComponent,
     MusicHomeComponent,
     MusicPlayerPageComponent,
-    FooterComponent
+    FooterComponent,
+    MainTvComponent,
+    MainCelebsComponent,
+    MainEventsComponent,
+    MoviesComponent,
+    InterviewsComponent,
+    TvSeriesComponent
   ],
   imports: [
     BrowserModule,

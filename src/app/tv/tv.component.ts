@@ -17,16 +17,16 @@ export class TvComponent implements OnInit {
       playlist: Array<IMedia> = [
           {
               title: 'The Wedding Party 2 Trailer',
-              src: "../../assets/videos/The%20Wedding%20Party%202%20-%20Trailer%20-%20YouTube.MP4",
+              src: "http://res.cloudinary.com/sammiestarks/video/upload/v1512482005/The_Wedding_Party_2_-_Trailer_-_YouTube_ejmzvy.mp4",
               type: 'video/mp4'
           },
           {
-              title: 'UNCLE COME AND SEE - Latest Emmanuella MarkAngelComedy FT Agozie Episode 135',
-              src: "../../assets/videos/UNCLE%20COME%20AND%20SEE%20-%20--%20(Latest%20Emmanuella%20MarkAngelComedy%20FT%20Agozie)%20(Episode%20135)%20%5B360p%5D.mp4",
+              title: 'Davido performs in the dome London',
+              src: "http://res.cloudinary.com/sammiestarks/video/upload/v1512482125/FACTORY78__Davido_performance_at_the_MOBO_Awards_2017_360p_lzhydg.mp4",
               type: 'video/mp4'
           },
           {
-              title: 'Wizkid and Ebro Darden On Beats',
+              title: 'UNCLE COME AND SEE - Latest Emmanuella MarkAngelComedy FT Agozie Episode 135 ',
               src: "../../assets/videos/Wizkid%20and%20Ebro%20Darden%20On%20Beats%201%20%5BExcerpt%5D%20-%20YouTube.MP4",
               type: 'video/mp4'
           },

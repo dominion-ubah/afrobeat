@@ -2,24 +2,76 @@
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 .main-nav {
-  margin-top: 0.6em;
+    margin-top: 0.6em;
 }
+
 .navbar-nav .nav-item a:visited,
 .navbar-nav .nav-item a {
-  color: rgba(130, 130, 130, 1);
-  margin-right: 1em;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+    color: rgba(130, 130, 130, 1);
+    margin-right: 1em;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
 .navbar-nav .nav-item a:active,
 .navbar-nav .nav-item a:hover {
-  color: brown;
+    color: brown;
 }
+
 .main-nav-left {
-  margin-top: 0.5em;
-  margin-left: 5em;
+    margin-top: 0.5em;
+    margin-left: 5em;
 }
+
 .sign-btn {
-  margin-top: -0.5em;
+    margin-top: -0.5em;
 }
+
+@media (max-width: 575px) {
+    links::ng-deep {
+        width: 100%;
+        ul.irep {
+            width: 100%;
+            li {
+                padding-bottom: 1em;
+                padding-left: 5em;
+                width: 100%;
+            }
+            li:last-child {
+                padding-bottom: 1em;
+                padding-left: 4.5em;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    links::ng-deep {
+        width: 100%;
+        ul.irep {
+            width: 100%;
+            li {
+                padding-bottom: 1em;
+                padding-left: 5em;
+                width: 100%;
+            }
+            li:last-child {
+                padding-bottom: 1em;
+                padding-left: 4.5em;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

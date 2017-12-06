@@ -2,12 +2,11 @@
     <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
         <logo>
             <a class="navbar-brand" href="#">
-                <img style="margin-top:-0.7em;" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512465818/unnamed_hqta5f.jpg"
-                    height="30px" alt="">
+                <img style="margin-top:-0.7em;" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512465818/unnamed_hqta5f.jpg" height="30px" alt="">
             </a>
         </logo>
-        <links class="main-nav" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-            <ul class="navbar-nav mr-auto main-nav-left ">
+        <links class="main-nav" routerLinkActive="active">
+            <ul class="navbar-nav mr-auto main-nav-left " [routerLinkActiveOptions]="{exact:true}">
                 <li class="nav-item ">
                     <a class="nav-link  waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
                 </li>
@@ -18,18 +17,18 @@
                     <a class="nav-link waves-light" [routerLink]="[ '/music/' ]" routerLinkActive="active" mdbRippleRadius>Music</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-light" routerLinkActive="active" mdbRippleRadius>TV</a>
+                    <a class="nav-link waves-light" [routerLink]="[ '/tv/' ]" routerLinkActive="active" mdbRippleRadius>TV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Celebrities</a>
+                    <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/celebs/' ]" routerLinkActive="active" mdbRippleRadius>Celebrities</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link">Events</a>
+                    <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/events/' ]" routerLinkActive="active" mdbRippleRadius>Events</a>
                 </li>
             </ul>
             <span class="navbar-text white-text">
-              <links class="iRep">
-                <ul class="navbar-nav mr-auto">
+              <links >
+                <ul class="navbar-nav irep  mr-auto">
                     <li class="nav-item active">
                       <a class="nav-link waves-light" mdbRippleRadius>I report</a>
           </li>

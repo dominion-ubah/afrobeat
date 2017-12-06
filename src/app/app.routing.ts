@@ -18,6 +18,7 @@ import { AdminVideoMainComponent } from './admin-video-main/admin-video-main.com
 import { MainHomeComponent } from './main-home/main-home.component';
 import { MainNewsComponent } from './main-news/main-news.component';
 import { MainMusicComponent } from './main-music/main-music.component';
+import { MainTvComponent } from './main-tv/main-tv.component';
 import { AdminNewsViewComponent } from './admin-news-view/admin-news-view.component';
 import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-category.component';
 import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
@@ -53,6 +54,16 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "music",
                 component: MainMusicComponent,
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "tv",
+                component: MainTvComponent,
                 // children: [
                 //     {
                 //         path: "news-detail",

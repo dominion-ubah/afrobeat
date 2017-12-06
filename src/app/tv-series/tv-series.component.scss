@@ -1,48 +1,13 @@
-.newsContent {
+.music-main {
     margin: 50px;
     padding: 5px;
-    padding-right: 2em;
-    padding-bottom: 5em;
     font-family: "Dosis", sans-serif;
-}
-
-.card-body {
-    font-size: 130%;
-    .btn {
-        background-color: darkred;
-    }
-}
-
-.spot-artist {
-    padding-left: 65px;
-    padding-right: 2em;
-    font-size: 20px;
-    h3 {
-        font-size: 130%;
-    }
-}
-
-.celeb {
-    padding: 10px;
-}
-
-.celebName {
-    padding-left: 34px;
-    padding-top: 5px;
-    padding: 10px;
-    p {
-        text-transform: uppercase;
-        margin-top: -0.4em;
-    }
 }
 
 h4 {
     font-weight: 600;
     font-size: 28px;
-}
-
-h6 {
-    font-weight: bold;
+    font-family: "Dosis", sans-serif;
 }
 
 .NewsNav {
@@ -78,12 +43,9 @@ h6 {
 }
 
 @media (max-width: 575px) {
-    .newsContent {
+    .music-main-page {
         margin: 15px;
         padding: 2px;
-    }
-    .card-body {
-        display: none;
     }
     .home-components-layout {
         margin-left: 0;
@@ -106,7 +68,7 @@ h6 {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-    .newsContent {
+    .music-main-page {
         margin: 15px;
         padding: 2px;
     }
@@ -117,33 +79,20 @@ h6 {
         height: 250px;
         width: 100%;
     }
-    .NewsNav li a:link {
-        text-decoration: none;
+    .NewsNav li a {
         color: grey;
         font-weight: bold;
         font-size: x-small;
-        background-color: transparent;
-    }
-    .NewsNav li a:visited {
-        text-decoration: none;
-        color: red;
-        font-weight: bold;
-        font-size: x-small;
-        background-color: transparent;
     }
     .NewsNav li a:hover {
-        text-decoration: none;
         color: red;
         font-weight: bold;
         font-size: x-small;
-        background-color: transparent;
     }
     .NewsNav li a:active {
-        text-decoration: none;
         color: red;
         font-weight: bold;
         font-size: x-small;
-        background-color: transparent;
     }
 }
 
