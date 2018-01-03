@@ -60,6 +60,9 @@ import { MainEventsComponent } from './main-events/main-events.component';
 import { MoviesComponent } from './movies/movies.component';
 import { InterviewsComponent } from './interviews/interviews.component';
 import { TvSeriesComponent } from './tv-series/tv-series.component';
+import { EventsComponent } from './events/events.component';
+import { AdvertsComponent } from './adverts/adverts.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -101,7 +104,10 @@ import { TvSeriesComponent } from './tv-series/tv-series.component';
     MainEventsComponent,
     MoviesComponent,
     InterviewsComponent,
-    TvSeriesComponent
+    TvSeriesComponent,
+    EventsComponent,
+    AdvertsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

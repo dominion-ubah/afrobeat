@@ -1,23 +1,66 @@
-<div class="music-main">
-    <div class="row mt-5 ">
-        <div class="col-lg-8 ml-5">
-            <h4 class="ml-3 mt-4">
+<div class="container">
+    <div class="row newsContent mt-md-5 mb-5">
+        <div class="col-lg-8">
+            <h4 class=" mt-4 sub-headers">
                 Albums
             </h4>
         </div>
-        <div class="col-lg-8 home-components-layout">
-            <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
+        <div class="row">
+            <div class="col-md-9 home-components-layout">
+                <ul class="nav NewsNav">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#">#Hot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">#Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">#Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link right-fix" href="#">View All
+                                                    <i class="fa fa-chevron-right" ></i>
+                                                </a>
+                    </li>
+                </ul>
+                <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
-                <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                    <a [routerLink]="[ '/album-detail/' ]">
-                        <img src="{{Tile}}" height="200px" width="100%" />
-                    </a>
-                </ngx-tile>
+                    <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                        <a [routerLink]="[ '/album-detail/' ]">
+                            <img src="{{Tile}}" height="250px" width="100%" />
+                            <div class="overlay">
+                                <div class="btn btn-rounded play-music">
+                                    <p>Listen
+                                        <i class=" mx-md-2 fa fa-play"></i>
+                                    </p>
+                                </div>
+                            </div>
 
-                <button NgxCarouselPrev class='leftRs'>&lt;</button>
-                <button NgxCarouselNext class='rightRs'>&gt;</button>
-            </ngx-carousel>
+                        </a>
+                    </ngx-tile>
+
+
+                    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+                    <button NgxCarouselNext class='rightRs'>&gt;</button>
+                </ngx-carousel>
+            </div>
+
+            <div class="col-md-3 spot-artist d-sm-none d-md-block d-none d-sm-block">
+                <div class="row">
+                    <h3 style="margin-bottom: 10px; ">Find us on facebook</h3>
+                </div>
+
+                <div>
+                    <hr>
+                </div>
+                <div class="row socials">
+                    <div class="fb"></div>
+                </div>
+            </div>
+
+
+
         </div>
-    </div>
 
+    </div>
 </div>

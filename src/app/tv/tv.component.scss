@@ -1,3 +1,20 @@
+.tvPge {
+    font-family: "Dosis", sans-serif;
+    background-color: rgba(63, 193, 233, 0.1);
+    padding: 2em 0;
+}
+
+.sub-headers {
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-expanded !important;
+    font-weight: 700 !important;
+    font-size: 160%;
+}
+
+.playList {
+    background-color: rgba(63, 193, 233, 0.2)
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -5,9 +22,7 @@ ul {
     font-family: "Dosis", sans-serif;
     font-size: 13px;
     font-weight: bold;
-
 }
-
 
 ul li {
     padding: 10px;
@@ -15,72 +30,49 @@ ul li {
 }
 
 ul li.selected {
-    background-color: #dddddd;
+    background-color: rgba(63, 193, 233, 0.2);
 }
 
-ul li:hover {
-    background-color: #cce6ee;
-}
-
-.tvContent {
-    margin: 50px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-}
-
+// ul li:hover {
+//     background-color: rgba(63, 193, 233, 0.3);
+// }
 h4 {
     font-weight: 600;
     font-size: 28px;
 }
 
-.tvC {
-    margin-top: -3em;
-}
-
-.box {
-
-    height: 550px;
-}
-
-.tvPge{
-    margin: 50px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    background-color: rgba(13, 59, 189, 0.1);
+vg-controls::ng-deep {
+    vg-play-pause::ng-deep {
+        color: white;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-    .tvContent{
+    .tvContent {
         margin: 5px;
         padding: 2px;
     }
-
-    .home-components-layout{
+    .home-components-layout {
         margin-left: 0;
     }
-
-    vg-player{
+    vg-player {
         margin-top: 25px;
         height: 250px;
         width: auto;
-
-
     }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-    .tvContent{
+    .tvContent {
         margin: 5px;
         padding: 2px;
     }
-
-    .home-components-layout{
+    .home-components-layout {
         margin-left: 0;
     }
-
-    vg-player{
+    vg-player {
         margin-top: 25px;
         height: 200px;
         width: auto;
@@ -88,10 +80,70 @@ h4 {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) { }
+@media (min-width: 768px) and (max-width: 991px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {  }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .playList {
+        margin-left: -1em;
+        padding: 0;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+    .playList {
+        position: relative;
+        // border: 1px solid red;
+        div {
+            // background-color: red;
+            text-align: center;
+            color: rgba(130, 130, 130, 1);
+        }
+        div.lower-click {
+            // background-color: red;
+            left: 11.5em;
+            position: absolute;
+            bottom: 0px;
+        }
+        i {
+            text-align: center;
+            color: rgba(130, 130, 130, 1);
+        }
+        margin-left: -1em;
+        padding: 0;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0.5em;
+                margin: 0;
+                .vidtitle {
+                    text-align: left;
+                }
+                .vidtitle span {
+                    font-family: "Dosis", sans-serif;
+                    color: black;
+                }
+                .vidtitle span:last-child {
+                    font-weight: 400;
+                    display: block;
+                }
+                div {
+                    padding: 0;
+                    margin: 0;
+                    height: 6em;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

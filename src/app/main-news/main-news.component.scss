@@ -1,63 +1,81 @@
-.main-socials{
-    margin-left: -4em;
-}
-.main-socials i{
-    margin-left: -0.1em;
+.main-socials {
+    margin: 0 -3.4em 0 0;
+    a {
+        margin-left: 0.3em;
+    }
 }
 
-.main-news-row > div{
-    margin-bottom:20px;
+.search-container {
+    padding-top: 7.3em;
+}
+
+.main-socials i {
+    margin-left: -1em;
+}
+
+.main-news-row>div {
+    margin-bottom: 20px;
     margin-top: 0;
-
 }
 
-.main-news-row img{
+.main-news-row img {
     height: 230px;
 }
 
-h1{
+h1 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.fa-heart{
+.fa-heart {
     color: #ff4444;
     font-size: 20px;
 }
 
-.fa-eye{
+.fa-eye {
     color: #00C851;
     font-size: 20px;
 }
 
-.fa-share-alt{
+.fa-share-alt {
     font-size: 20px;
-
 }
 
-.socialClicks{
+.socialClicks {
     padding-top: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
-
 }
 
-.card-body{
-
+.card-body {
     margin-bottom: 0;
 }
 
-.sideNews{
+.sideNews {
     font-family: "Dosis", sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
-.sideNews h2{
+.sideNews h2 {
     font-weight: bold;
     text-align: center;
 }
 
-.sideNews ul li a{
+.sideNews ul li a {
     margin: 10px;
     font-weight: 600;
+}
+
+.card {
+    img {
+        height: 11em;
+    }
+    height: 500px;
+    margin: 0 0 2em 0;
+    p {
+        font-size: 80%
+    }
+    h4 {
+        font-size: 110%;
+    }
 }

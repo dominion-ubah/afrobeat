@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    min-width: 73rem !important;
+    // font-size: 100% !important;
+}
+
+.NewsNav li a,
+ul li div {
+    font-size: 105% !important;
+    margin-bottom: 0.3em;
+}

@@ -1,19 +1,15 @@
-<div class="box">
-    <div class="row tvContent mt-1 ">
-        <div class="col-md-9 ml-lg-5">
-            <h4 class="ml-3 mt-4">
-                Music Videos
-            </h4>
-        </div>
-    </div>
+<div class="tvPge">
+    <div class="container">
+        <h4 class=" my-md-3 sub-headers">
+            Music TV
+        </h4>
+        <div class="row tvC">
+            <div class="col-md-8 col-sm-12 col-xs-12 home-components-layout">
 
-    <div class="row  tvC ">
-        <div class="col-md-7  home-components-layout">
-            <div class="">
                 <vg-player (onPlayerReady)="onPlayerReady($event)">
                     <vg-buffering></vg-buffering>
                     <vg-controls>
-                        <vg-play-pause></vg-play-pause>
+                        <vg-play-pause style="color:white"></vg-play-pause>
                         <vg-playback-button></vg-playback-button>
                         <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
                         <vg-scrub-bar>
@@ -25,18 +21,29 @@
                         <vg-volume></vg-volume>
                         <vg-fullscreen></vg-fullscreen>
                     </vg-controls>
-                    <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="auto" crossorigin>
-                        </video>
+                    <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="metadata" autoplay crossorigin>
+                                        </video>
                 </vg-player>
+
+            </div>
+            <div class="col-md-4 playList col-sm-12 col-xs-12">
+                <div><i class="fa fa-chevron-up "></i></div>
+                <ul>
+                    <li class="row" *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
+                        <div class="vidpic mx-md-2 col-md-3">
+                            <img src={{item.coverSrc}} class="rounded" width="100%" height="100%" />
+                        </div>
+                        <div class="vidtitle col-md-8">
+                            <span> {{ item.title }} </span>
+                            <span> 05:49 </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lower-click"><i class="fa fa-chevron-down "></i></div>
             </div>
         </div>
-        <div class="col-md-3">
-            <h4>Playlist</h4>
-            <ul>
-                <li *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
-                    {{ item.title }}
-                </li>
-            </ul>
-        </div>
+
+
     </div>
+
 </div>

@@ -1,55 +1,57 @@
-<div class="container" *ngIf="!isOnAdminFunc()">
-    <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
-        <logo>
-            <a class="navbar-brand" href="#">
-                <img style="margin-top:-0.7em;" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512465818/unnamed_hqta5f.jpg" height="30px" alt="">
-            </a>
-        </logo>
-        <links class="main-nav" routerLinkActive="active">
-            <ul class="navbar-nav mr-auto main-nav-left " [routerLinkActiveOptions]="{exact:true}">
-                <li class="nav-item ">
-                    <a class="nav-link  waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-light" [routerLink]="[ '/news/' ]" routerLinkActive="active" mdbRippleRadius>News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-light" [routerLink]="[ '/music/' ]" routerLinkActive="active" mdbRippleRadius>Music</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-light" [routerLink]="[ '/tv/' ]" routerLinkActive="active" mdbRippleRadius>TV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/celebs/' ]" routerLinkActive="active" mdbRippleRadius>Celebrities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/events/' ]" routerLinkActive="active" mdbRippleRadius>Events</a>
-                </li>
-            </ul>
-            <span class="navbar-text white-text">
-              <links >
-                <ul class="navbar-nav irep  mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link waves-light" mdbRippleRadius>I report</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class=" nav-link waves-light btn sign-btn btn-danger btn-rounded waves-light" (click)="form.show()" mdbRippleRadius><a class="nav-link white-text"> Login / Sign Up</a></button>
-          </li>
-          </ul>
-        </links>
-        </span>
-        </links>
-    </mdb-navbar>
-</div>
+<div class="base-main">
+    <div class="container" *ngIf="!isOnAdminFunc()">
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar black  z-depth-2 ">
+            <logo>
+                <a class="navbar-brand" href="#">
+                    <img style="margin-top:-0.7em;" class="ml-md-5 " src="http://res.cloudinary.com/sammiestarks/image/upload/v1512465818/unnamed_hqta5f.jpg" height="30px" alt="">
+                </a>
+            </logo>
+            <links class="main-nav" routerLinkActive="active">
+                <ul class="navbar-nav mr-auto main-nav-left " [routerLinkActiveOptions]="{exact:true}">
+                    <li class="nav-item ">
+                        <a class="nav-link  waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" [routerLink]="[ '/news/' ]" routerLinkActive="active" mdbRippleRadius>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" [routerLink]="[ '/music/' ]" routerLinkActive="active" mdbRippleRadius>Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" [routerLink]="[ '/tv/' ]" routerLinkActive="active" mdbRippleRadius>TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/celebs/' ]" routerLinkActive="active" mdbRippleRadius>Celebrities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/events/' ]" routerLinkActive="active" mdbRippleRadius>Events</a>
+                    </li>
+                </ul>
+                <span class="navbar-text white-text mr-md-5 ">
+                  <links  >
+                    <ul class="navbar-nav irep  mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link waves-light" mdbRippleRadius>I report</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class=" nav-link waves-light btn sign-btn btn-danger btn-rounded waves-light" (click)="form.show()" mdbRippleRadius><a class="nav-link white-text"> Login / Sign Up</a></button>
+              </li>
+              </ul>
+            </links>
+            </span>
+            </links>
+        </mdb-navbar>
+    </div>
 
-<div class="container" *ngIf="isOnAdminFunc()">
-    <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
-        <logo>
-            <a class="navbar-brand" href="#">
-                <img src="../../../images/afblogoblk.png" height="30px" alt="">
-            </a>
-            <h4 class="float-right white-text" style="margin-top:0.4em">Admin</h4>
-        </logo>
+    <div class="container" *ngIf="isOnAdminFunc()">
+        <mdb-navbar SideClass="navbar black navbar-expand-lg navbar-dark scrolling-navbar fixed-top  z-depth-2 ">
+            <logo>
+                <a class="navbar-brand" href="#">
+                    <img src="../../../images/afblogoblk.png" height="30px" alt="">
+                </a>
+                <h4 class="float-right white-text" style="margin-top:0.4em">Admin</h4>
+            </logo>
 
-    </mdb-navbar>
+        </mdb-navbar>
+    </div>
 </div>

@@ -1,27 +1,23 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
 @Component({
   selector: 'app-interviews',
   templateUrl: './interviews.component.html',
-  styleUrls: ['./interviews.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./interviews.component.scss']
 })
 export class InterviewsComponent implements OnInit {
 
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
- 
+ public evt;
   ngOnInit(){
     this.carouselTileItems = [
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/SFTOS_atmbz4.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465997/falz_nwwjhn.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/kissDaniel_vz55ws.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466006/reminese_xpmwwx.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/runtown_ji2swb.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466008/skales_olexmz.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466009/tuface_lnba8v.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/lilkesh_bubu6t.jpg"
+        "http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1513678249/yemiAlade_pnrncc.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1513683522/derinle_uu7vqy.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1513679385/jmartins_sojhqr.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1513679382/eldee_tnyvap.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1512466011/wizkid-2babymama_pbdo9g.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466013/wizkidfav_muohgq.jpg",
     ];
  
     this.carouselTile = {
@@ -63,9 +59,9 @@ export class InterviewsComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    // evt: any
+    e: any
   ) {
-    
+ this.evt= e;
        const len = this.carouselTileItems.length
        if (len <= 4) {
          for (let i = len; i < len + 4; i++) {

@@ -9,7 +9,7 @@ import { NgxCarousel } from 'ngx-carousel';
 export class MainHomeComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
- 
+ public evt;
   ngOnInit(){
     
     this.carouselTileItems = [
@@ -66,9 +66,9 @@ export class MainHomeComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    // evt: any
+    e: any
   ) {
- 
+ this.evt = e;
     const len = this.carouselTileItems.length
     if (len <= 4) {
       for (let i = len; i < len + 8; i++) {

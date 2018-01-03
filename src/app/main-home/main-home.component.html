@@ -1,48 +1,59 @@
 <div class="base-main">
     <div class="search-container">
-        <div class="mx-auto search-box">
-            <form class="form-inline  waves-light" mdbRippleRadius>
-                <input class="form-control col-sm-8  col-lg-10" type="text" placeholder="Search for news, videos and music">
-                <i class="fa fa-search col-lg-1 col-sm-1 " aria-hidden="true"></i>
-            </form>
+        <div class="container">
+            <div class="mx-auto search-box">
+                <form class="form-inline  waves-light" mdbRippleRadius>
+                    <input class="form-control col-sm-8  col-lg-12" type="text" placeholder="Search for news, videos and music or a celebrity that you are looking for">
+                    <i class="fa fa-search col-sm-1 " aria-hidden="true"></i>
+                </form>
+            </div>
         </div>
+
     </div>
     <div class="row ms-cont">
         <div class="col-lg-9">
 
         </div>
-        <div class="col-md-3 main-socials mt-3 float-right col-sm-12 col-xs-12">
-            <span style="font-weight:600;">
-                FOLLOW US:
-              </span>
-            <!--Facebook-->
-            <a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+        <div class="container">
+            <div class="col-md-3 main-socials mt-3 float-right col-sm-12 col-xs-12">
+                <span style="font-weight:600;">
+                    FOLLOW US:
+                  </span>
+                <!--Facebook-->
+                <a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
 
-            <!--Twitter-->
-            <a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+                <!--Twitter-->
+                <a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
 
-            <!--Instagram-->
-            <a class="icons-sm ins-ic"><i class="fa fa-instagram"></i></a>
+                <!--Instagram-->
+                <a class="icons-sm ins-ic"><i class="fa fa-instagram"></i></a>
 
+                <!--Instagram-->
+                <a class="icons-sm ins-ic"><i class="fa fa-youtube"></i></a>
+
+            </div>
         </div>
 
 
+
+    </div>
+    <div class="container">
+        <div class=" main-carousel">
+            <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
+
+                <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                    <a [routerLink]="[ '/news-detail/' ]">
+                        <img src="{{Tile}}" height="400px" width="100%" />
+                    </a>
+
+                </ngx-tile>
+
+                <button NgxCarouselPrev class='leftRs'>&lt;</button>
+                <button NgxCarouselNext class='rightRs'>&gt;</button>
+            </ngx-carousel>
+        </div>
     </div>
 
-    <div class="container main-carousel ml-md-5 mr-md-5">
-        <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
-
-            <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                <a [routerLink]="[ '/news-detail/' ]">
-                    <img src="{{Tile}}" height="350px" width="100%" />
-                </a>
-
-            </ngx-tile>
-
-            <button NgxCarouselPrev class='leftRs'>&lt;</button>
-            <button NgxCarouselNext class='rightRs'>&gt;</button>
-        </ngx-carousel>
-    </div>
 </div>
 
 

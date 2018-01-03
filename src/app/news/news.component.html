@@ -1,105 +1,52 @@
-<div class="row newsContent mb-5">
-    <div class="col-lg-8 ml-md-5">
-        <h4 class="ml-1 mt-4">
-            News
-        </h4>
-    </div>
-    <div class="row">
-        <div class="col-md-8 home-components-layout">
-            <ul class="nav NewsNav">
-                <li class="nav-item">
-                    <a class="nav-link active hoverable" href="#">Top Story</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hoverable" href="#">Most Read</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hoverable" href="#">Most Discussed</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hoverable" href="#">View All</a>
-                </li>
-            </ul>
-            <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
-
-                <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                    <a [routerLink]="[ '/news-detail/' ]">
-                        <img src="{{Tile}}" height="200px" width="100%" />
-                        <div class="card-body ">
-                            <h4 class="card-title" style="color: black; font-size: medium; font-weight: 300">Card title</h4>
-                            <p style="color: black; font-size: smaller; font-weight: 400">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a class="btn btn-primary waves-light" mdbRippleRadius>Read More</a>
-                        </div>
-                    </a>
-                </ngx-tile>
-
-                <button NgxCarouselPrev class='leftRs'>&lt;</button>
-                <button NgxCarouselNext class='rightRs'>&gt;</button>
-            </ngx-carousel>
+<div class="container">
+    <div class="row newsContent mt-md-5 mb-1">
+        <div class="col-lg-8">
+            <h4 class=" mt-4 mb-4 sub-headers">
+                NEWS
+            </h4>
         </div>
-
-
-
-        <div class="col-md-3 mr-md-5 spot-artist d-sm-none d-md-block d-none d-sm-block
-">
-            <div class="row">
-                <h3 style="margin-bottom: 10px; ">SPOTLIGHT CELEBRITIES</h3>
-            </div>
-
-            <div>
-                <hr>
-            </div>
-            <div class="row">
-                <ul class="nav flex-column">
+        <div class="row">
+            <div class="col-md-9 home-components-layout">
+                <ul class="nav NewsNav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="row celeb">
-                                <div class="col-md-7">
-                                    <div class="rounded">
-                                        <img class="img-fluid animated fadeInDown" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512466010/wizkid_x6hiyp.jpg" alt="" style="height: 70px; width: auto" />
-                                    </div>
-                                </div>
-                                <div class="col-md-5 celebName">
-                                    <h6>Wizkid</h6>
-                                    <p>Artist</p>
-                                </div>
-                            </div>
-                        </a>
+                        <a class="nav-link active " href="#">#Top Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="row celeb">
-                                <div class="col-md-7">
-                                    <div class="rounded">
-                                        <img class="img-fluid animated fadeInDownBig" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg" alt="" style="height: 70px; width: auto" />
-                                    </div>
-                                </div>
-                                <div class="col-md-5 celebName">
-                                    <h6>Davido</h6>
-                                    <p>Artist</p>
-                                </div>
-                            </div>
-                        </a>
+                        <a class="nav-link " href="#">#Most Read</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="row celeb">
-                                <div class="col-md-7">
-                                    <div class="rounded">
-                                        <img class="img-fluid animated swing" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463061/MI-The-Chairman-art_oad11a.jpg" alt="" style="height: 70px; width: auto" />
-                                    </div>
-                                </div>
-                                <div class="col-md-5 celebName">
-                                    <h6>MI</h6>
-                                    <p>Artist</p>
-                                </div>
-                            </div>
+                        <a class="nav-link " href="#">#Most Discussed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link right-fix" href="#">View All
+                            <i class="fa fa-chevron-right" ></i>
                         </a>
                     </li>
                 </ul>
+                <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
+
+                    <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                        <a [routerLink]="[ '/news-detail/' ]">
+                            <img src="{{Tile}}" height="200px" width="100%" />
+                            <div class="card-body z-depth-0 ">
+                                <h4 class="card-title" style="color: black; font-size: medium; font-weight: 300">BREAKING NEWS: Some quick example text to build on </h4>
+                                <a class="waves-light red-text" mdbRippleRadius>AFROBEAT </a>
+                            </div>
+                        </a>
+                    </ngx-tile>
+
+                    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+                    <button NgxCarouselNext class='rightRs'>&gt;</button>
+                </ngx-carousel>
             </div>
+
+
+
+            <div class="col-md-3 spot-artist d-sm-none d-md-block d-none d-sm-block adverts-side">
+                <!-- !!adverts -->
+            </div>
+
         </div>
 
     </div>
-
 </div>

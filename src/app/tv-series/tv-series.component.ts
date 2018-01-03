@@ -1,21 +1,20 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
 @Component({
   selector: 'app-tv-series',
   templateUrl: './tv-series.component.html',
-  styleUrls: ['./tv-series.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./tv-series.component.scss']
 })
 export class TvSeriesComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
- 
+ public evt;
   ngOnInit(){
     this.carouselTileItems = [
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/SFTOS_atmbz4.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg",
+      'http://res.cloudinary.com/sammiestarks/image/upload/v1512463064/thematter_qrzze6.jpg',
+      'http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1513610176/Pick-UpAG_dxqhjx.jpg',
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512465997/falz_nwwjhn.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/kissDaniel_vz55ws.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1513610172/davidoAye_ygyoad.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466006/reminese_xpmwwx.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/runtown_ji2swb.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466008/skales_olexmz.jpg",
@@ -62,10 +61,9 @@ export class TvSeriesComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    
-    // evt: any
+    e: any
   ) {
-    
+ this.evt =e;
        const len = this.carouselTileItems.length
        if (len <= 4) {
          for (let i = len; i < len + 4; i++) {

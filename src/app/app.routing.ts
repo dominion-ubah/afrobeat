@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 
-import { NavbarComponent } from './navbar/navbar.component';
+// import { NavbarComponent } from './navbar/navbar.component';
 import { BaseComponent } from './base/base.component';
-import { MusicPlayerComponent } from './music-player/music-player.component';
+// import { MusicPlayerComponent } from './music-player/music-player.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminEntryComponent } from './admin-entry/admin-entry.component'; // make useful
@@ -26,9 +26,14 @@ import { AdminNewsCategoryComponent } from './admin-news-category/admin-news-cat
 import { MainNewsDetailComponent } from './main-news-detail/main-news-detail.component';
 import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
+// import { LoadingComponent } from './loading/loading.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
 
 const AfrobeatRoutes: Routes = [
+//     {
+// path:  "",
+// component: LoadingComponent
+//     },
     {
         path: "",
         component: BaseComponent,
@@ -37,8 +42,6 @@ const AfrobeatRoutes: Routes = [
                 path: "",
                 component: MainHomeComponent,
                 children: [
-                    { path: "", component: NavbarComponent},
-                    { path: "", component: MusicPlayerComponent},
                     { path: "home", component: HomeComponent},
                     // {PreloadingStrategy: PreloadAllModules; }
                 ]

@@ -10,35 +10,74 @@ h4 {
     font-family: "Dosis", sans-serif;
 }
 
+.adverts-side {
+    background-image: url("http://4.bp.blogspot.com/_dG7AzDPfFVA/TDyg9jODPKI/AAAAAAAAADA/uXM91P1u0Zs/s1600/mtn+new+advert+project+fame.jpg");
+    height: 20em;
+    background-size: cover;
+}
+
+ngx-tile::ng-deep {
+    position: relative;
+    .overlay {
+        opacity: 0;
+        background-image: radial-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0) 0%, rgba(219, 219, 219, 0) 100%);
+        position: absolute;
+        top: 5px;
+        width: 15.5em;
+        height: 22em;
+        .play-music {
+            display: none;
+            background-image: linear-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0.2) 0%, rgba(219, 219, 219, 0.7) 100%);
+            padding: 0.4em;
+            position: absolute;
+            top: 105px;
+            left: 40px;
+            transition: 500ms ease-in;
+            p {
+                font-size: 120%;
+                font-weight: 700;
+                padding: 0;
+                margin: 0;
+                transition: 500ms ease-in;
+                color: red;
+            }
+        }
+        transition: 900ms ease-in-out;
+    }
+    .overlay:hover {
+        opacity: 1;
+        transition: 500ms ease-in;
+        background-image: radial-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0.2) 0%, rgba(219, 219, 219, 0.7) 100%);
+        // position: absolute;
+        // top: 5px;
+        // width: 15em;
+        // height: 28em;
+        .play-music {
+            display: block;
+            transition: 500ms ease-in-out;
+        }
+        transition: 500ms ease-in-out;
+    }
+}
+
 .NewsNav {
     text-transform: uppercase;
-    a:link {
-        color: grey;
-        font-weight: bold;
-        font-size: 14px;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    a:visited {
-        color: grey;
-        font-weight: bold;
-        font-size: 14px;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    a:hover {
-        color: darkred;
-        font-weight: bold;
-        font-size: 14px;
-        background-color: transparent;
-        text-decoration: none;
-    }
+    a.active,
+    a:hover,
     a:active {
-        color: darkred;
-        font-weight: bold;
-        font-size: 14px;
+        color: darkred !important;
+        transition: 300ms ease-in;
+    }
+    a:link,
+    a:visited {
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-condensed !important;
+        font-weight: 800 !important;
+        color: rgba(130, 130, 130, 1);
+        font-size: 101%;
         background-color: transparent;
         text-decoration: none;
+        transition: 300ms ease-out;
     }
 }
 
@@ -86,6 +125,161 @@ h4 {
     }
     .NewsNav li a:hover {
         color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    .NewsNav li a:active {
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+}
+
+.newsContent {
+    padding-bottom: 5em;
+    font-size: 80%;
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-expanded;
+    // font-weight: 800 !important;
+}
+
+ngx-carousel::ng-deep {
+    position: relative;
+    box-shadow: none !important;
+    ul.ngxcarouselPoint {
+        position: absolute;
+        top: -35px;
+        right: 3px;
+        li {
+            background-color: red;
+            border: none;
+        }
+    }
+}
+
+ngx-tile::ng-deep {
+    box-shadow: none !important;
+}
+
+.card-body {
+    font-size: 130%;
+    h4 {
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-condensed !important;
+        font-weight: 400 !important;
+        font-size: 80%;
+        color: black;
+    }
+    h4:hover {
+        text-decoration: underline;
+    }
+}
+
+.leftRs,
+.rightRs {
+    visibility: hidden !important;
+}
+
+.spot-artist {
+    margin-top: -5em;
+    padding-left: 65px;
+    padding-right: 2em;
+    font-size: 20px;
+    h3 {
+        font-size: 90%;
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-expanded !important;
+        font-weight: 700 !important;
+        margin: 0;
+        padding: 0;
+    }
+    hr {
+        margin-top: -0.1em;
+        margin-left: -0.7em;
+    }
+}
+
+.celeb {
+    padding: 5px;
+}
+
+.celebName {
+    padding-left: 34px;
+    padding-top: 5px;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-condensed !important;
+    font-weight: 800 !important;
+    p {
+        text-transform: uppercase;
+        margin-top: -0.4em;
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-expanded !important;
+        font-weight: 400 !important;
+    }
+}
+
+h4 {}
+
+h6 {
+    font-weight: bold;
+}
+
+.socials {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.NewsNav {
+    // border: 1px solid red;
+    color: light-grey;
+    position: relative;
+    text-transform: uppercase;
+    .right-fix {
+        position: absolute;
+        right: -5px;
+        top: -35px;
+        i {
+            font-weight: 400 !important;
+            font-size: 90%;
+        }
+    }
+    a.active,
+    a:hover,
+    a:active {
+        color: darkred !important;
+        transition: 300ms ease-in;
+    }
+    a:link,
+    a:visited {
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-condensed !important;
+        font-weight: 800 !important;
+        color: rgba(130, 130, 130, 1);
+        font-size: 101%;
+        background-color: transparent;
+        text-decoration: none;
+        transition: 300ms ease-out;
+    }
+}
+
+@media (max-width: 575px) {
+    .newsContent {
+        margin: 15px;
+        padding: 2px;
+    }
+    .card-body {
+        display: none;
+    }
+    .home-components-layout {
+        margin-left: 0;
+    }
+    img {
+        height: 250px;
+        width: 100%;
+    }
+    .NewsNav li a {
+        color: grey;
         font-weight: bold;
         font-size: x-small;
     }

@@ -1,48 +1,75 @@
-<div class="base-main">
-    <div class="tvPge">
-        <div class="box">
-            <div class="row tvContent mt-1 ">
-                <div class="col-md-9 ml-md-1">
-                    <h4 class=" mt-4">
-                        TV
-                    </h4>
-                </div>
-            </div>
-
-            <div class="row ml-md-1 tvC">
-                <div class="col-md-11 col-sm-12 col-xs-10 home-components-layout">
-                    <div class="" style="">
-                        <vg-player (onPlayerReady)="onPlayerReady($event)">
-                            <vg-buffering></vg-buffering>
-                            <vg-controls>
-                                <vg-play-pause></vg-play-pause>
-                                <vg-playback-button></vg-playback-button>
-                                <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-                                <vg-scrub-bar>
-                                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                                    <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-                                </vg-scrub-bar>
-                                <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-                                <vg-mute></vg-mute>
-                                <vg-volume></vg-volume>
-                                <vg-fullscreen></vg-fullscreen>
-                            </vg-controls>
-                            <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="auto" crossorigin>
-                        </video>
-                        </vg-player>
+<div class="base-main black">
+    <div class="container">
+        <div class="tvPge">
+            <!-- <div class="container"> -->
+            <h4 class=" my-md-3 sub-headers">
+                <div class="row tv-header">
+                    <div class="col-md-2">
+                        ON TV <span class="dot">.</span>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="search-container">
+                            <div class="mx-auto search-box">
+                                <form class="form-inline  waves-light" mdbRippleRadius>
+                                    <input class="form-control col-sm-8  col-lg-10" type="text" placeholder="Search for Live events and Shows or Series">
+                                    <i class="fa fa-search col-lg-1 col-sm-1" aria-hidden="true"></i>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-2 playList col-sm-12 col-xs-2">
+
+
+            </h4>
+            <div class="row tvC">
+                <div class="col-md-9 col-sm-12 col-xs-12 home-components-layout">
+
+                    <vg-player (onPlayerReady)="onPlayerReady($event)">
+                        <vg-buffering></vg-buffering>
+                        <vg-controls>
+                            <vg-play-pause style="color:white"></vg-play-pause>
+                            <vg-playback-button></vg-playback-button>
+                            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+                            <vg-scrub-bar>
+                                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                            </vg-scrub-bar>
+                            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+                            <vg-mute></vg-mute>
+                            <vg-volume></vg-volume>
+                            <vg-fullscreen></vg-fullscreen>
+                        </vg-controls>
+                        <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="metadata" autoplay crossorigin>
+                                                </video>
+                    </vg-player>
+
+                </div>
+                <div class="col-md-3 playList col-sm-12 col-xs-12">
+                    <div><i class="fa fa-chevron-up "></i></div>
                     <ul>
-                        <li class="hoverable" *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
-                            {{ item.title }}
+                        <li class="row" *ngFor="let item of playlist; let $index = index" (click)="onClickPlaylistItem(item, $index)" [class.selected]="item === currentItem">
+                            <div class="vidpic mx-md-2 col-md-5">
+                                <img src={{item.coverSrc}} class="rounded" width="95%" height="95%" />
+                            </div>
+                            <div class="vidtitle col-md-6">
+                                <span> {{ item.title }} </span>
+                                <span> 05:49 </span>
+                            </div>
                         </li>
                     </ul>
-                </div> -->
+                    <div class="lower-click"><i class="fa fa-chevron-down "></i></div>
+                </div>
             </div>
 
+
+
+
+            <!-- </div> -->
         </div>
     </div>
+
+
+
 </div>
 <app-movies></app-movies>
 <app-tv-series></app-tv-series>

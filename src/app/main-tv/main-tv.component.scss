@@ -1,54 +1,36 @@
-h1 {
-    min-height: 350px;
-    background-color: #ccc;
-    text-align: center;
-    line-height: 200px;
-}
-
-.leftRs {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
-    border-radius: 999px;
-    left: 0;
-}
-
-.side-news h1 p {
+.tvPge {
     font-family: "Dosis", sans-serif;
-    text-align: center;
+    background-color: black;
+    padding: 6.9em 0 3em 0;
 }
 
-.rightRs {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
-    border-radius: 999px;
-    right: 0;
+.sub-headers {
+    font-size: 160%;
 }
 
-.main-carousel {
-    height: 420px;
-    width: 94%;
+.dot {
+    font-size: 500%;
+    color: green;
+    line-height: 1px;
+    animation: blink 900ms infinite;
 }
 
-.base-main {
-    background: url("http://res.cloudinary.com/sammiestarks/image/upload/v1512463581/mainHeader_mfyfvq.jpg");
-    background-size: cover;
+.tv-header {
+    padding: 0;
+    margin-top: -1.5em;
 }
 
-.main-socials {
-    color: white;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    font-family: "Dosis", sans-serif;
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.playList {
+    background-color: rgba(163, 193, 233, 0.2)
 }
 
 ul {
@@ -66,37 +48,21 @@ ul li {
 }
 
 ul li.selected {
-    background-color: #dddddd;
+    background-color: rgba(163, 193, 233, 0.2);
 }
 
-ul li:hover {
-    background-color: #cce6ee;
-}
-
-.tvContent {
-    margin: 50px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-}
-
+// ul li:hover {
+//     background-color: rgba(63, 193, 233, 0.3);
+// }
 h4 {
     font-weight: 600;
     font-size: 28px;
 }
 
-.tvC {
-    margin-top: -3em;
-}
-
-.box {
-    height: 550px;
-}
-
-.tvPge {
-    margin: 50px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    background-color: rgba(13, 59, 189, 0.1);
+vg-controls::ng-deep {
+    vg-play-pause::ng-deep {
+        color: white;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -135,48 +101,92 @@ h4 {
 @media (min-width: 768px) and (max-width: 991px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) {
-    .ms-cont {
-        margin: 0 auto;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .playList {
+        margin-left: -2em;
+        padding: 0;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                margin: 0;
+            }
+        }
     }
-    .main-socials {
-        color: white;
-        margin: 0 auto;
+    .tvPge>.container {
+        // margin: 0em 2em;
     }
-    .search-container i {
-        display: none
-    }
-    .search-container {
-        margin-top: -3em;
-    }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px) {
-    .ms-cont {
-        margin: 0 auto;
-    }
-    .main-socials {
-        margin: 0 auto;
-        color: white;
-        margin-left: 25px;
-    }
-    .search-container i {
-        display: none
+    .tvC {
+        width: 105%;
     }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {}
-
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .playList {
+        position: relative;
+        // border: 1px solid red;
+        div {
+            // background-color: red;
+            text-align: center;
+            color: rgba(130, 130, 130, 1);
+        }
+        div.lower-click {
+            // background-color: red;
+            left: 10em;
+            position: absolute;
+            bottom: 0px;
+        }
+        i {
+            text-align: center;
+            color: rgba(130, 130, 130, 1);
+        }
+        margin-left: -1em;
+        padding: 0;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0.5em;
+                margin: 0;
+                .vidtitle {
+                    text-align: left;
+                }
+                .vidtitle span {
+                    font-family: "Dosis", sans-serif;
+                    color: black;
+                }
+                .vidtitle span:last-child {
+                    font-weight: 400;
+                    display: block;
+                }
+                div {
+                    padding: 0;
+                    margin: 0;
+                    height: 6em;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+    .tvPge>.container {
+        // margin: 0em 2em;
+    }
+    .tvC {
+        width: 105%;
+    }
+}
+
+.base-main {
+    // background: url("http://res.cloudinary.com/sammiestarks/image/upload/v1512463581/mainHeader_mfyfvq.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+.main-socials {
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-family: "Dosis", sans-serif;
+}

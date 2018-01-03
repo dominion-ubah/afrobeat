@@ -9,15 +9,15 @@ import { NgxCarousel } from 'ngx-carousel';
 export class MusicComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
- 
+ public evt;
   ngOnInit(){
     this.carouselTileItems = [
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/SFTOS_atmbz4.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466006/reminese_xpmwwx.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512465997/falz_nwwjhn.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/kissDaniel_vz55ws.jpg",
-        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466006/reminese_xpmwwx.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/runtown_ji2swb.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466008/skales_olexmz.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466009/tuface_lnba8v.jpg",
         "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/lilkesh_bubu6t.jpg"
@@ -62,9 +62,9 @@ export class MusicComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    // evt: any
+    e: any
   ) {
-    
+ this.evt = e;
        const len = this.carouselTileItems.length
        if (len <= 4) {
          for (let i = len; i < len + 4; i++) {

@@ -6,12 +6,6 @@
     // font-weight: 800 !important;
 }
 
-.adverts-side {
-    background-image: url("http://4.bp.blogspot.com/_dG7AzDPfFVA/TDyg9jODPKI/AAAAAAAAADA/uXM91P1u0Zs/s1600/mtn+new+advert+project+fame.jpg");
-    height: 20em;
-    background-size: cover;
-}
-
 .sub-headers {
     font-family: 'Dosis', sans-serif !important;
     font-stretch: extra-expanded !important;
@@ -98,6 +92,26 @@ h4 {}
 
 h6 {
     font-weight: bold;
+}
+
+.socials {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.tweets {
+    background-image: url("https://www.hallaminternet.com/assets/Opta-Joe-Twitter-Feed.jpg");
+    background-size: contain;
+    background-color: turquoise;
+    height: 400px;
+    width: 100%;
+}
+
+.event-main-img {
+    background-image: url("http://res.cloudinary.com/sammiestarks/image/upload/v1513590838/bankyw-wedding_h9s51i.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
 }
 
 .NewsNav {
@@ -210,6 +224,12 @@ h6 {
         font-size: x-small;
         background-color: transparent;
     }
+}
+
+.adverts-wide {
+    background-image: url("https://chinabambi.files.wordpress.com/2014/11/hd200-lores.jpg");
+    height: 20em;
+    background-size: cover;
 }
 
 // Medium devices (tablets, 768px and up)

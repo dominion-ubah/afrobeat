@@ -1,26 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
-@Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.scss']
-})
-export class MoviesComponent implements OnInit {
 
+@Component({
+  selector: 'app-adverts',
+  templateUrl: './adverts.component.html',
+  styleUrls: ['./adverts.component.scss']
+})
+export class AdvertsComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
  public evt;
   ngOnInit(){
     this.carouselTileItems = [
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262365/Wedding-party-2_lrj8is.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513263115/mywifeandi_mijkuk.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/c_scale,w_1019/v1513262376/triptojamaica_pjjggf.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262337/bama_wesgg8.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262351/010-days-in-suncity-1-2017-latest-nigerian-nollywood-movie-wapbaze-com-July-Saturday-08-07-2017LoadedNG.com__wzcbcp.jpg'
+      "http://res.cloudinary.com/sammiestarks/image/upload/v1512463060/divorced_nh0ujs.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465985/bovi_lgaasw.png",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512463056/chris_qsmj2q.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466001/davidoBillion_buvgaf.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/caro2_hlwgqp.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465983/caro3_lmh6xt.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465991/caro4_s9yjax.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465716/image_1495220402_67010566_qooahq.jpg",
     ];
  
     this.carouselTile = {
-      grid: {xs: 1, sm: 2, md: 3, lg: 4, all: 0},
+      grid: {xs: 1, sm: 1, md: 2, lg: 4, all: 0},
       slide: 2,
       speed: 400,
       animation: 'lazy',
@@ -58,19 +61,20 @@ export class MoviesComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    evt: any
+    e: any
   ) {
- this.evt = evt;
-       const len = this.carouselTileItems.length
-       if (len <= 4) {
-         for (let i = len; i < len + 4; i++) {
-           this.carouselTileItems.push(i);
-         }
-       }
-    
-     }
+ this.evt = e;
+    const len = this.carouselTileItems.length
+    if (len <= 4) {
+      for (let i = len; i < len + 4; i++) {
+        this.carouselTileItems.push(i);
+      }
+    }
+ 
+  }
 
      // carouselLoad will trigger this funnction when your load value reaches
      // it is helps to load the data by parts to increase the performance of the app
      // must use feature to all carousel
+
 }

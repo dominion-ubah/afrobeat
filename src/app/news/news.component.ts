@@ -9,7 +9,7 @@ import { NgxCarousel } from 'ngx-carousel';
 export class NewsComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
- 
+ public evt;
   ngOnInit(){
     this.carouselTileItems = [
       "http://res.cloudinary.com/sammiestarks/image/upload/v1512463060/divorced_nh0ujs.jpg",
@@ -61,9 +61,9 @@ export class NewsComponent implements OnInit {
   }
  
   public carouselTileLoad(
-    // evt: any
+    e: any
   ) {
- 
+ this.evt = e;
     const len = this.carouselTileItems.length
     if (len <= 4) {
       for (let i = len; i < len + 4; i++) {
