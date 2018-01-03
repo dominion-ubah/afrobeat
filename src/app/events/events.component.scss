@@ -50,6 +50,19 @@ ngx-tile::ng-deep {
     visibility: hidden !important;
 }
 
+.more-link {
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-condensed !important;
+    font-weight: 800 !important;
+    color: rgba(130, 130, 130, 1);
+    font-size: 95%;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    // margin-left: -0.8em;
+}
+
 .spot-artist {
     padding-left: 65px;
     padding-right: 2em;

@@ -42,6 +42,7 @@ h4 {
 }
 
 vg-controls::ng-deep {
+    color: white !important;
     vg-play-pause::ng-deep {
         color: white;
     }

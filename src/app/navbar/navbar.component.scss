@@ -27,11 +27,12 @@ mdb-navbar::ng-deep {
 
 .navbar-nav .nav-item a:visited,
 .navbar-nav .nav-item a {
-    color: rgba(160, 200, 230, 1);
+    color: rgba(165, 185, 205, 1);
     margin-right: 1em;
     font-family: "Dosis", sans-serif;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     text-transform: uppercase;
+    font-stretch: extra-expanded;
 }
 
 .base-main {
@@ -54,8 +55,11 @@ mdb-navbar::ng-deep {
 
 .sign-btn {
     margin-top: -0.2em;
-    padding: 0.2em;
+    padding: 0.2em 0em;
     font-size: 100%;
+    a {
+        margin-left: 0.5em;
+    }
 }
 
 links::ng-deep {
@@ -81,10 +85,14 @@ links::ng-deep {
         }
         ul.irep {
             width: 100%;
+            background: none;
+            background-color: transparent;
             li {
                 padding-bottom: 1em;
                 padding-left: 5em;
                 width: 100%;
+                background: none;
+                background-color: transparent;
             }
             li:last-child {
                 padding-bottom: 1em;

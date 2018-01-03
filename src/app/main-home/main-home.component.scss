@@ -65,7 +65,8 @@ h1 {
     position: relative;
 }
 
-.search-box input {
+.search-box input,
+.search-tag {
     border: 3px solid rgba(13, 16, 23, 1);
     font-family: "Dosis", sans-serif;
     border-radius: 2px;
@@ -81,7 +82,7 @@ h1 {
 
 .search-box .fa {
     position: absolute;
-    right: -30px;
+    right: -15px;
     top: 23px;
     color: rgba(130, 160, 230, 1);
 }

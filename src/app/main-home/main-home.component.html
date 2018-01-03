@@ -1,12 +1,21 @@
 <div class="base-main">
     <div class="search-container">
         <div class="container">
-            <div class="mx-auto search-box">
-                <form class="form-inline  waves-light" mdbRippleRadius>
-                    <input class="form-control col-sm-8  col-lg-12" type="text" placeholder="Search for news, videos and music or a celebrity that you are looking for">
-                    <i class="fa fa-search col-sm-1 " aria-hidden="true"></i>
-                </form>
+            <div class="row mx-auto search-box">
+                <div class="col-md-2 pt-md-3 search-tag" style="margin-top:0.23em;"><a href="" style="color:white; ">SEARCH</a> </div>
+                <div class="col-md-10 ">
+                    <form style="margin-left:-2em;" class="form-inline  waves-light" mdbRippleRadius>
+                        <input class="form-control col-sm-8  col-lg-12" type="text" placeholder="Search for news, videos and music or a celebrity that you are looking for">
+                        <i class="fa fa-search col-sm-1 " aria-hidden="true"></i>
+                    </form>
+                </div>
+
             </div>
+
+
+
+
+
         </div>
 
     </div>
@@ -43,7 +52,7 @@
 
                 <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
                     <a [routerLink]="[ '/news-detail/' ]">
-                        <img src="{{Tile}}" height="400px" width="100%" />
+                        <img src="{{Tile}}" height="370px" width="100%" />
                     </a>
 
                 </ngx-tile>
