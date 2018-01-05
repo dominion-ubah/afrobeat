@@ -5,6 +5,7 @@
     margin-top: 0.5em;
     padding-top: 0.5em;
     margin-left: -3em;
+
 }
 
 .container {}
@@ -23,6 +24,12 @@ mdb-navbar::ng-deep {
     font-family: 'Dosis', sans-serif !important;
     font-stretch: extra-expanded;
     font-weight: 700 !important;
+}
+
+.navDrop{
+    a{
+        font-size: 16px;
+    }
 }
 
 .navbar-nav .nav-item a:visited,

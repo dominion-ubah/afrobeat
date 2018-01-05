@@ -11,14 +11,35 @@
                     <li class="nav-item ">
                         <a class="nav-link  waves-light " [routerLink]="[ '/' ]" routerLinkActive="active" mdbRippleRadius>Home </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-light" [routerLink]="[ '/news/' ]" routerLinkActive="active" mdbRippleRadius>News</a>
+                    <li class="nav-item dropdown" dropdown>
+                        <a dropdownToggle mdbRippleRadius type="button" class="nav-link waves-light dropdown-toggle" mdbRippleRadius>News<span class="caret"></span></a>
+                        <div *dropdownMenu class="navDrop dropdown-menu dropdown dropdown-dark" role="menu">
+                            <a class="dropdown-item waves-light" [routerLink]="[ '/news/' ]" mdbRippleRadius href="#">Latest News</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Celebrities</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Lifestyle</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Gossip</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Movies</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Music</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Wedding & Pre-wedding</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-light" [routerLink]="[ '/music/' ]" routerLinkActive="active" mdbRippleRadius>Music</a>
+                    <li class="nav-item dropdown" dropdown>
+                        <a dropdownToggle mdbRippleRadius type="button" class="nav-link waves-light dropdown-toggle"  mdbRippleRadius>Music<span class="caret"></span></a>
+                        <div *dropdownMenu class="navDrop dropdown-menu dropdown dropdown-dark" role="menu">
+                            <a class="dropdown-item waves-light" [routerLink]="[ '/music/' ]" routerLinkActive="active" mdbRippleRadius href="#">Newly Added</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Artists</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Albums</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Music Videos</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-light" [routerLink]="[ '/tv/' ]" routerLinkActive="active" mdbRippleRadius>TV</a>
+                    <li class="nav-item dropdown" dropdown>
+                        <a dropdownToggle mdbRippleRadius type="button" class="nav-link waves-light dropdown-toggle" mdbRippleRadius>TV<span class="caret"></span></a>
+                        <div *dropdownMenu class="navDrop dropdown-menu dropdown dropdown-dark" role="menu">
+                            <a class="dropdown-item waves-light" [routerLink]="[ '/tv/' ]" routerLinkActive="active" mdbRippleRadius href="#">Newly Added</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Movies</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">TV Series</a>
+                            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Interviews</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" class="nav-link waves-light" [routerLink]="[ '/celebs/' ]" routerLinkActive="active" mdbRippleRadius>Celebrities</a>
