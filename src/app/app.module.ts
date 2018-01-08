@@ -63,6 +63,7 @@ import { TvSeriesComponent } from './tv-series/tv-series.component';
 import { EventsComponent } from './events/events.component';
 import { AdvertsComponent } from './adverts/adverts.component';
 import { LoadingComponent } from './loading/loading.component';
+import { IreportComponent } from './ireport/ireport.component';
 
 @NgModule({
   declarations: [
@@ -107,7 +108,8 @@ import { LoadingComponent } from './loading/loading.component';
     TvSeriesComponent,
     EventsComponent,
     AdvertsComponent,
-    LoadingComponent
+    LoadingComponent,
+    IreportComponent
   ],
   imports: [
     BrowserModule,
