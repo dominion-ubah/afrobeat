@@ -3,16 +3,10 @@
 html {
     overflow-x: hidden;
     overflow-y: auto;
-
 }
 
 * {
     font-family: 'Nunito', sans-serif;
-}
-
-.container {
-    min-width: 73.5rem !important;
-    // font-size: 100% !important;
 }
 
 .NewsNav li a,
@@ -21,3 +15,41 @@ ul li div {
     margin-bottom: 0.3em;
 }
 
+@media (max-width: 575px) {
+    .container {
+        min-width: 100%!important;
+        // font-size: 100% !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        min-width: 100%!important;
+        // font-size: 100% !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        min-width: 100%!important;
+        // font-size: 100% !important;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        min-width: 73.5rem !important;
+        // font-size: 100% !important;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .container {
+        min-width: 75rem !important;
+        // font-size: 100% !important;
+    }
+}

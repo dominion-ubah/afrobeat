@@ -64,6 +64,7 @@ ngx-tile::ng-deep {
 }
 
 .spot-artist {
+    margin-top: -3em;
     padding-left: 65px;
     padding-right: 2em;
     font-size: 20px;
@@ -108,8 +109,9 @@ h6 {
 }
 
 .socials {
-    height: 300px;
+    height: 150px;
     overflow-y: scroll;
+    border: 1px solid lightgray;
 }
 
 .tweets {

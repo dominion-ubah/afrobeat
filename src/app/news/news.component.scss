@@ -8,8 +8,9 @@
 
 .adverts-side {
     background-image: url("http://4.bp.blogspot.com/_dG7AzDPfFVA/TDyg9jODPKI/AAAAAAAAADA/uXM91P1u0Zs/s1600/mtn+new+advert+project+fame.jpg");
-    height: 20em;
+    height: 15em;
     background-size: cover;
+    background-color: grey;
 }
 
 .sub-headers {
@@ -39,8 +40,6 @@ ngx-tile::ng-deep {
 
 .card-body {
     font-size: 130%;
-
-
     h4 {
         font-family: 'Dosis', sans-serif !important;
         font-stretch: extra-condensed !important;

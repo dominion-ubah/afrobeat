@@ -187,6 +187,17 @@ ngx-tile::ng-deep {
 }
 
 .spot-artist {
+    .more-link {
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-condensed !important;
+        font-weight: 800 !important;
+        color: rgba(130, 130, 130, 1);
+        font-size: 71%;
+        background-color: transparent;
+        text-decoration: none;
+        display: block;
+        margin-left: -0.8em;
+    }
     margin-top: -5em;
     padding-left: 65px;
     padding-right: 2em;

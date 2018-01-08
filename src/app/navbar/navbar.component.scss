@@ -2,10 +2,14 @@
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 .main-nav {
-    margin-top: 0.5em;
+    // margin-top: 0.5em;
     padding-top: 0.5em;
     margin-left: -3em;
+}
 
+.navbar {
+    max-width: 90% !important;
+    z-index: 900;
 }
 
 .container {}
@@ -26,8 +30,8 @@ mdb-navbar::ng-deep {
     font-weight: 700 !important;
 }
 
-.navDrop{
-    a{
+.navDrop {
+    a {
         font-size: 16px;
     }
 }
@@ -43,6 +47,7 @@ mdb-navbar::ng-deep {
 }
 
 .base-main {
+    max-width: 90% !important;
     background-color: black;
     // background: url("http://res.cloudinary.com/sammiestarks/image/upload/v1512463581/mainHeader_mfyfvq.jpg");
     // background-image: linear-gradient(top, left rgba(0, 0, 0, 1) 50%, rgba(9, 18, 9, 1) 10%);
@@ -129,6 +134,10 @@ links::ng-deep {
                 width: 100%;
             }
         }
+    }
+    .navbar {
+        margin-top: 0.5em;
+        z-index: 800;
     }
 }
 
