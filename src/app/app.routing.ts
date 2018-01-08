@@ -28,6 +28,7 @@ import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
 // import { LoadingComponent } from './loading/loading.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
+import { IreportComponent } from './ireport/ireport.component';
 
 const AfrobeatRoutes: Routes = [
 //     {
@@ -59,6 +60,16 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "music",
                 component: MainMusicComponent,
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "ireport",
+                component: IreportComponent,
                 // children: [
                 //     {
                 //         path: "news-detail",
