@@ -64,6 +64,9 @@ import { EventsComponent } from './events/events.component';
 import { AdvertsComponent } from './adverts/adverts.component';
 import { LoadingComponent } from './loading/loading.component';
 import { IreportComponent } from './ireport/ireport.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
+import { InterviewDetailsComponent } from './interview-details/interview-details.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +112,10 @@ import { IreportComponent } from './ireport/ireport.component';
     EventsComponent,
     AdvertsComponent,
     LoadingComponent,
-    IreportComponent
+    IreportComponent,
+    MovieDetailsComponent,
+    TvseriesDetailsComponent,
+    InterviewDetailsComponent
   ],
   imports: [
     BrowserModule,

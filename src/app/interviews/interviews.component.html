@@ -26,7 +26,7 @@
                 <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
                     <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                        <a [routerLink]="[ '/artist-detail/' ]">
+                        <a [routerLink]="[ '/interview-details/' ]">
                             <img src="{{Tile}}" height="250px" width="100%" />
                             <div class="overlay">
                                 <div class="btn btn-rounded play-music">
