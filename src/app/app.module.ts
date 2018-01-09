@@ -67,6 +67,9 @@ import { IreportComponent } from './ireport/ireport.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
 import { InterviewDetailsComponent } from './interview-details/interview-details.component';
+import { SongsComponent } from './songs/songs.component';
+import { ViewAllComponent } from './view-all/view-all.component';
+import { CelebrityDetailComponent } from './celebrity-detail/celebrity-detail.component';
 
 @NgModule({
   declarations: [
@@ -115,7 +118,10 @@ import { InterviewDetailsComponent } from './interview-details/interview-details
     IreportComponent,
     MovieDetailsComponent,
     TvseriesDetailsComponent,
-    InterviewDetailsComponent
+    InterviewDetailsComponent,
+    SongsComponent,
+    ViewAllComponent,
+    CelebrityDetailComponent
   ],
   imports: [
     BrowserModule,

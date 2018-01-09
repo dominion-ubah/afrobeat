@@ -32,6 +32,8 @@ import { IreportComponent } from './ireport/ireport.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
 import { InterviewDetailsComponent } from './interview-details/interview-details.component';
+import { ViewAllComponent } from './view-all/view-all.component';
+
 
 const AfrobeatRoutes: Routes = [
 //     {
@@ -167,6 +169,15 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "interview-details",
                 component: InterviewDetailsComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "view-all",
+                component: ViewAllComponent,
                 // children: [
                 //     {
                 //         
