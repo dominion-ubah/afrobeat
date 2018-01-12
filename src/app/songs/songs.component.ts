@@ -55,6 +55,8 @@ export class SongsComponent implements OnInit {
           }
         `
       },
+
+
       interval: 2000,
       load: 2,
       loop: true,
