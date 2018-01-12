@@ -94,7 +94,17 @@ a:active{
     text-decoration: none;
     color: red;
 }
-
+.more-link {
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-condensed !important;
+    font-weight: 800 !important;
+    color: rgba(130, 130, 130, 1);
+    font-size: 71%;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    margin-left: -0.8em;
+}
 .active{
     text-decoration: none;
     color: red;
@@ -109,3 +119,27 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+.celeb {
+    padding: 5px;
+}
+
+.celebName {
+    padding-left: 34px;
+    padding-top: 5px;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif !important;
+    color: black;
+    font-stretch: extra-condensed !important;
+    font-weight: 800 !important;
+    font-size: 130% !important;
+    p {
+        text-transform: uppercase;
+        margin-top: -0.4em;
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-expanded !important;
+        font-weight: 400 !important;
+        font-size: 60% !important;
+    }
+}
+
