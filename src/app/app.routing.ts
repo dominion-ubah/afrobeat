@@ -33,6 +33,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
 import { InterviewDetailsComponent } from './interview-details/interview-details.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { CelebrityDetailComponent } from './celebrity-detail/celebrity-detail.component';
 
 
 const AfrobeatRoutes: Routes = [
@@ -178,6 +179,15 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "view-all",
                 component: ViewAllComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "celebrity-details",
+                component: CelebrityDetailComponent,
                 // children: [
                 //     {
                 //         
