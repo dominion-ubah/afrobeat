@@ -131,7 +131,7 @@ links::ng-deep {
             li:last-child {
                 padding-bottom: 1em;
                 padding-left: 4.5em;
-                width: 100%;
+                width: 3em;
             }
         }
     }
@@ -139,6 +139,15 @@ links::ng-deep {
         margin-top: 0.5em;
         z-index: 800;
     }
+    .main-nav {
+        padding: 1em;
+    }
+    // navbar {
+    //     padding: 1em;
+    // }
+    // mdb-navbar::ng-deep {
+    //     padding: 2em;
+    // }
 }
 
 // Medium devices (tablets, 768px and up)

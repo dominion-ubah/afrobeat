@@ -142,3 +142,21 @@ h1 {
         font-size: 110%;
     }
 }
+
+@media (max-width: 575px) {
+    .search-box div {
+        margin-left: 1.5em;
+        input {
+            padding-left: 0.5em;
+        }
+        i {
+            display: none;
+        }
+    }
+    .search-tag {
+        display: none;
+    }
+    .search-container {
+        // padding-top: 7.3em;
+    }
+}

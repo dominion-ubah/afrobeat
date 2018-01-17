@@ -118,12 +118,22 @@ h1 {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
+    .search-box div {
+        margin-left: 1.5em;
+        input {
+            padding-left: 0.5em;
+        }
+    }
+    .search-tag {
+        display: none;
+    }
     .ms-cont {
         margin: 0 auto;
     }
     .main-socials {
         color: white;
         margin: 0 auto;
+        margin-left: -1em;
     }
     .search-container i {
         display: none
