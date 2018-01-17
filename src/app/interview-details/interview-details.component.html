@@ -1,3 +1,231 @@
-<p>
-  interview-details works!
-</p>
+<div style="background-image: url(http://res.cloudinary.com/sammiestarks/image/upload/v1515062037/nigerian-artist-poster_nzraba.jpg);  height: 400px; width: 100%; margin: 0; padding: 0; color: white">
+  <div class="container">
+    <div class="search-container mt-md-1">
+      <div class="container">
+        <div class="row mx-auto search-box">
+          <div class="col-md-2 search-tag" style="margin-top:0.2em;"><a href="" style="color:white; ">SEARCH</a> </div>
+          <div class="col-md-10 ">
+            <form style="margin-left:-2em;" class="form-inline  waves-light" mdbRippleRadius>
+              <input class="form-control col-sm-8  col-lg-12" type="text" placeholder="Search for news, videos and music or a celebrity that you are looking for">
+              <i class="fa fa-search col-sm-1 " aria-hidden="true"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="headers">Interviews</h1>
+  </div>
+</div>
+
+<div class="row" style="margin: 50px;">
+  <div class="col-lg-8">
+    <div class="row">
+
+      <vg-player (onPlayerReady)="onPlayerReady($event)" style="height: 400px; width: 100%;">
+        <vg-buffering></vg-buffering>
+        <vg-controls>
+          <vg-play-pause style="color:white"></vg-play-pause>
+          <vg-playback-button></vg-playback-button>
+          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+          </vg-scrub-bar>
+          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-mute></vg-mute>
+          <vg-volume></vg-volume>
+          <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+        <video #media [vgMedia]="media" [src]="currentItem.src" id="singleVideo" preload="metadata" autoplay crossorigin>
+        </video>
+      </vg-player>
+
+      <h4>Title</h4>
+
+    </div>
+
+    <div class="row">
+      <div class="row col-lg-12" style="padding: 20px;">
+
+        <p>Share It</p>
+        <!--Facebook-->
+        <a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+
+        <!--Twitter-->
+        <a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+
+        <!--Instagram-->
+        <a class="icons-sm ins-ic"><i class="fa fa-instagram"></i></a>
+
+        <a class="icons-sm ins-ic"><i class="fa fa-thumbs-o-up" aria-hidden="true"><span><h6><span class="badge red">40k</span></h6></span></i></a>
+
+        <a class="icons-sm ins-ic"><i class="fa fa-eye" aria-hidden="true"><span><h6><span class="badge blue">4k</span></h6></span></i></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          It’s a sound and a style that is changing western music. Afrobeats – the fusion of African and international pop music is helping secure some of West Africa’s brightest stars a global audience. Jasmine Dotiwala speaks to Nigeria artist Wizkid about his career, his background and his influences.
+        </p>
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+
+      <!--Main wrapper-->
+      <div class="comments-list text-left">
+        <div class="section-heading">
+          <h3>Comments <span class="badge black">3</span></h3>
+        </div>
+        <!--First row-->
+        <div class="row">
+          <!--Image column-->
+          <div class="col-sm-2 col-12">
+            <img src="http://res.cloudinary.com/sammiestarks/image/upload/v1515413070/jenniferEnujiugha_egta4y.jpg">
+          </div>
+          <!--/.Image column-->
+          <!--Content column-->
+          <div class="col-sm-10 col-12">
+            <a><h3 class="user-name">Jennifer Enujiugha</h3></a>
+            <div class="card-data">
+              <ul class="pl-0">
+                <li class="comment-date"><i class="fa fa-clock-o"></i> 05/10/2015</li>
+              </ul>
+            </div>
+            <p class="comment-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+          <!--/.Content column-->
+        </div>
+        <!--/.First row-->
+        <!--Second row-->
+        <div class="row">
+          <!--Image column-->
+          <div class="col-sm-2 col-12">
+            <img src="http://res.cloudinary.com/sammiestarks/image/upload/v1515413072/IkDome_u31wcm.jpg">
+          </div>
+          <!--/.Image column-->
+          <!--Content column-->
+          <div class="col-sm-10 col-12">
+            <a><h3 class="user-name">IK Dome</h3></a>
+            <div class="card-data">
+              <ul class="pl-0">
+                <li class="comment-date"><i class="fa fa-clock-o"></i> 08/10/2015</li>
+              </ul>
+            </div>
+            <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+          </div>
+          <!--/.Content column-->
+        </div>
+        <!--/.Second row-->
+        <!--Third row-->
+        <div class="row">
+          <!--Image column-->
+          <div class="col-sm-2 col-12">
+            <img src="http://res.cloudinary.com/sammiestarks/image/upload/v1515413071/ChinenyeUzoma_g8n9dh.jpg">
+          </div>
+          <!--/.Image column-->
+          <!--Content column-->
+          <div class="col-sm-10 col-12">
+            <a><h3 class="user-name">Chinenye Uzoma</h3></a>
+            <div class="card-data">
+              <ul class="pl-0">
+                <li class="comment-date"><i class="fa fa-clock-o"></i> 17/10/2015</li>
+              </ul>
+            </div>
+            <p class="comment-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+            </p>
+          </div>
+          <!--/.Content column-->
+        </div>
+        <!--/.Third row-->
+      </div>
+      <!--/.Main wrapper-->
+    </div>
+  </div>
+  <div class="col-lg-4" style="font-size: small">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1515682411/ad4_rfsdmj.gif" alt="Chania">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1516181937/wzINterview_matzhj.jpg" alt="Pic"></div>
+                <div class="col-lg-6">
+                  <h5>Wizkid's interview with Channel 4</h5>
+                  <p>Views: 46k</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1516181951/omawumi_lnbtwa.png" alt="Pic"></div>
+                <div class="col-lg-6">
+                  <h5>Nigerian Artist, @Omawumi Storms Out Of @HFTVAfrica Interview</h5>
+                  <p>Views: 36k</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1516181934/yemi_1_laj9at.jpg" alt="Pic"></div>
+                <div class="col-lg-6">
+                  <h5>Nigerian Musician Yemi Alade Reveals How Ghanian Singer Sarkodie Seriously Disgraced Her</h5>
+                  <p>Views: 25k</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1516181939/oneononewithVectorThaViperNigerianHipHopArtistSaharaTV_tzg5qb.jpg" alt="Pic"></div>
+                <div class="col-lg-6">
+                  <h5>One On One Interview With Vector Tha Viper, Nigerian Hip-Hop Artist -#SaharaTV</h5>
+                  <p>Views: 46k</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1516181932/maxresdefault_1_a0mddu.jpg" alt="Pic"></div>
+                <div class="col-lg-6">
+                  <h5>FRENCH NIGERIAN SINGER ASA INTERVIEW AT SMOOTH 98.1FM</h5>
+                  <p>Views: 10k</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="row">
+                <button type="button" class="btn btn-dark btn-block">show more interviews</button>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1515682390/ad1_nvolwe.jpg" alt="Chania">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1515152460/jumiaAd_lqa9gr.jpg" alt="Chania">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
