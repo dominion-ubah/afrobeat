@@ -82,6 +82,14 @@ ngx-tile::ng-deep {
     }
 }
 
+vg-controls::ng-deep {
+    color: white !important;
+    vg-play-pause::ng-deep {
+        color: white;
+    }
+}
+
+
 @media (max-width: 575px) {
     .music-main-page {
         margin: 15px;
