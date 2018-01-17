@@ -27,7 +27,7 @@ export class SongsComponent implements OnInit {
       grid: {xs: 1, sm: 1, md: 3, lg: 6, all: 0},
       slide: 3,
       speed: 500,
-      animation: 'stagger',
+      // animation: 'stagger',
       point: {
         visible: true,
         pointStyles: `
