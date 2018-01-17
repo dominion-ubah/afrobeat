@@ -63,6 +63,13 @@ import { TvSeriesComponent } from './tv-series/tv-series.component';
 import { EventsComponent } from './events/events.component';
 import { AdvertsComponent } from './adverts/adverts.component';
 import { LoadingComponent } from './loading/loading.component';
+import { IreportComponent } from './ireport/ireport.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
+import { InterviewDetailsComponent } from './interview-details/interview-details.component';
+import { SongsComponent } from './songs/songs.component';
+import { ViewAllComponent } from './view-all/view-all.component';
+import { CelebrityDetailComponent } from './celebrity-detail/celebrity-detail.component';
 
 @NgModule({
   declarations: [
@@ -107,7 +114,14 @@ import { LoadingComponent } from './loading/loading.component';
     TvSeriesComponent,
     EventsComponent,
     AdvertsComponent,
-    LoadingComponent
+    LoadingComponent,
+    IreportComponent,
+    MovieDetailsComponent,
+    TvseriesDetailsComponent,
+    InterviewDetailsComponent,
+    SongsComponent,
+    ViewAllComponent,
+    CelebrityDetailComponent
   ],
   imports: [
     BrowserModule,

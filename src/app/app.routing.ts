@@ -28,6 +28,12 @@ import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
 // import { LoadingComponent } from './loading/loading.component';
 import { MusicPlayerPageComponent } from './music-player-page/music-player-page.component';
+import { IreportComponent } from './ireport/ireport.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { TvseriesDetailsComponent } from './tvseries-details/tvseries-details.component';
+import { InterviewDetailsComponent } from './interview-details/interview-details.component';
+import { ViewAllComponent } from './view-all/view-all.component';
+
 
 const AfrobeatRoutes: Routes = [
 //     {
@@ -59,6 +65,16 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "music",
                 component: MainMusicComponent,
+                // children: [
+                //     {
+                //         path: "news-detail",
+                //         component: MainNewsDetailComponent
+                //     }
+                // ]
+            },
+            {
+                path: "ireport",
+                component: IreportComponent,
                 // children: [
                 //     {
                 //         path: "news-detail",
@@ -126,6 +142,42 @@ const AfrobeatRoutes: Routes = [
             {
                 path: "song",
                 component: MusicPlayerPageComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "movie-details",
+                component: MovieDetailsComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "tvseries-details",
+                component: TvseriesDetailsComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "interview-details",
+                component: InterviewDetailsComponent,
+                // children: [
+                //     {
+                //         
+                //     }
+                // ]
+            },
+            {
+                path: "view-all",
+                component: ViewAllComponent,
                 // children: [
                 //     {
                 //         

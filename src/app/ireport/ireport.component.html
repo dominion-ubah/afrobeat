@@ -1,0 +1,483 @@
+<div class=" back-cover">
+    <div class="container">
+        <div class="search-container mt-md-1">
+            <div class="container">
+                <div class="row mx-auto search-box">
+                    <div class="col-md-2 search-tag" style="margin-top:0.2em;"><a href="" style="color:white; ">SEARCH</a> </div>
+                    <div class="col-md-10 ">
+                        <form style="margin-left:-2em;" class="form-inline  waves-light" mdbRippleRadius>
+                            <input class="form-control col-sm-8  col-lg-12" type="text" placeholder="Search for news, videos and music or a celebrity that you are looking for">
+                            <i class="fa fa-search col-sm-1 " aria-hidden="true"></i>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <h1 class="headers">I. Report</h1>
+    </div>
+    <div class="fixed-action-btn" style="bottom: 45px; right: 100px;">
+
+        <a class=" fixed-action-btn btn-floating btn-lg black waves-light irep-add" (click)="fixed.toggle()" style="bottom: 45px; right: 24px;" mdbRippleRadius>
+            <i class="fa fa-pencil" style="margin-top:-0.5em"></i>
+        </a>
+
+        <div class="fixed_collapse" [mdbCollapse]="isCollapsed" #fixed="bs-collapse">
+            <a class="btn-floating yellow darken-1 waves-light" (click)="form.show()" mdbRippleRadius><i class="fa fa-microphone"></i></a>
+            <a class="btn-floating green waves-light" mdbRippleRadius><i class="fa fa-sticky-note"></i></a>
+            <a class="btn-floating blue waves-light" mdbRippleRadius><i class="fa fa-video-camera"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<!--Card Light-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+
+        </div>
+        <div class="container">
+            <div class="col-md-3 main-socials mt-3 float-right col-sm-12 col-xs-12">
+                <span style="font-weight:600;">
+                              FOLLOW US:
+                            </span>
+                <!--Facebook-->
+                <a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+
+                <!--Twitter-->
+                <a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+
+                <!--Instagram-->
+                <a class="icons-sm ins-ic"><i class="fa fa-instagram"></i></a>
+
+                <!--Instagram-->
+                <a class="icons-sm ins-ic"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row  mt-md-3">
+        <div class="col-md-8">
+            <div class="row main-news-row">
+                <div class="col-lg-12" style="background-color: #2E2E2E; color: white; text-decoration: none; border: solid; border-color: black; padding: 5px;">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <p class="nav-link" href="#">Found 1,608 news in total</p>
+                        </li>
+                        <li class="nav-item">
+                            <div class="btn-group" dropdown>
+                                <button dropdownToggle class="btn btn-dark dropdown-toggle waves-light" type="button" mdbRippleRadius>
+                                  Sort By
+                              </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Most Popular</a>
+                                    <a class="dropdown-item" href="#">Most Read</a>
+                                    <a class="dropdown-item" href="#">Most Discussed</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="card z-depth-0 view hm-zoom">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463060/divorced_nh0ujs.jpg" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">We are not officially divorced</h4>
+                                <!--Text-->
+                                <p class="card-text">Nollywood actress, Faithia Williams in an exclusive interview with Broadway TV silenced the rum ....</p>
+                                <a href="#" class="waves-light" [routerLink]="[ '/news-detail' ]" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card z-depth-0 view hm-zoom newsItem">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/q_100/v1512466012/caro6_xeiqhp.jpg" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Denrele goes all out anticipating 2018</h4>
+                                <!--Text-->
+                                <p class="card-text">Sia does not have time for anyoneâ€™s nonsense. The singer released a nude ....</p>
+                                <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card z-depth-0 view hm-zoom">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463061/bovi_pmqhd5.png" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Bovi Narrates How His Phone Was Stolen And Recovered</h4>
+                                <!--Text-->
+                                <p class="card-text">Nigerian comedian, Bovi, has narrated how a man who came to help put out the fire that engulfed his ....</p>
+                                <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="card z-depth-0 view hm-zoom">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463056/brainiac_yzh7cv.jpg" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Brainiac! Female Student Graduates With CGPA Of 4.97</h4>
+                                <!--Text-->
+                                <p class="card-text">A Nigerian lady Chika Juan Stephen graduated as the best student in the Accounting department for ....</p>
+                                <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card z-depth-0 view hm-zoom">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512466001/kay_jmzebk.jpg" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Mr 2Kay sues Eko Hotel for N500 Million</h4>
+                                <!--Text-->
+                                <p class="card-text">On the 22nd of October this year, Singer Mr 2Kay was robbed at gunpoint in his hotel room, at Eko H....</p>
+                                <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card z-depth-0 view hm-zoom">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463056/chris_qsmj2q.jpg" alt="Card image cap">
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Pastor Chris Oyakhilome's daughter, Sharon is engaged </h4>
+                                <!--Text-->
+                                <p class="card-text">Carrissa Sharon Oyakhilome , daughter of Pastor Chris Oyakhilome has just gotten engaged to her fi ....</p>
+                                <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                                <!-- <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="col-md-3  ">
+
+                      <div class="card z-depth-0 view hm-zoom">
+
+                          &lt;!&ndash;Card image&ndash;&gt;
+                          <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463066/techno_x9lxwy.jpg" alt="Card image cap">
+
+                          &lt;!&ndash;Card content&ndash;&gt;
+                          <div class="card-body">
+                              &lt;!&ndash;Title&ndash;&gt;
+                              <h4 class="card-title">Tekno Fires Back, Refers To Dammy Krane As An â€˜Itâ€™</h4>
+                              &lt;!&ndash;Text&ndash;&gt;
+                              <p class="card-text">MMMG singer Tekno has publicly replied Dammy Krane who appears to be taking a jibe at him for a w ....</p>
+                              <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                              &lt;!&ndash; <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> &ndash;&gt;
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card z-depth-0 view hm-zoom">
+
+                          &lt;!&ndash;Card image&ndash;&gt;
+                          <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/back_thqv0c.png" alt="Card image cap">
+
+                          &lt;!&ndash;Card content&ndash;&gt;
+                          <div class="card-body">
+                              &lt;!&ndash;Title&ndash;&gt;
+                              <h4 class="card-title">Actress Daniella Okeke Flaunts Her Backside</h4>
+                              &lt;!&ndash;Text&ndash;&gt;
+                              <p class="card-text">Sexy Nollywood actress, Daniella Okeke lit up her social media page with notifications on Sunday ....</p>
+                              <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                              &lt;!&ndash; <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div> &ndash;&gt;
+                          </div>
+
+                      </div>
+                  </div>
+-->
+                </div>
+                <!-- <div class="row">
+
+
+
+                  <div class="col-md-4">
+                      <div class="card z-depth-0 view hm-zoom">
+
+
+                          <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1512463067/mikel_e1srts.jpg" alt="Card image cap">
+
+
+                          <div class="card-body">
+
+                              <h4 class="card-title">Adorable Pictures Of Mikel Obi And His Twin Daughters</h4>
+
+                              <p class="card-text">Olga Diyachenko , girlfriend of Nigerian International footballer Mikel Obi , shared these s ....</p>
+                              <a href="#" class="waves-light" mdbRippleRadius>Read more</a>
+                              <div class="row socialClicks">
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Likes" placement="top" mdbRippleRadius><i class="fa fa-heart" aria-hidden="true"><span> 1k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Views" placement="top" mdbRippleRadius><i class="fa fa-eye" aria-hidden="true"><span> 3k</span></i></a></div>
+                                  <div class="col-md-4"><a class="hoverable" mdbTooltip="Share" placement="top" mdbRippleRadius><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div> -->
+            </div>
+            <div class="row">
+                <div class="container">
+                    <nav>
+                        <ul class="pagination pg-dark pagination-lg">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" mdbRippleRadius aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" mdbRippleRadius>1 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" mdbRippleRadius>2</a></li>
+                            <li class="page-item"><a class="page-link" mdbRippleRadius>3</a></li>
+                            <li class="page-item"><a class="page-link" mdbRippleRadius>4</a></li>
+                            <li class="page-item"><a class="page-link" mdbRippleRadius>5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" mdbRippleRadius aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 right-side" style="padding-left: 100px;">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <h5>Search</h5>
+                    <hr>
+                    <div class="md-form">
+                        <input mdbActive type="text" id="form1" class="form-control">
+                        <label for="form1" class="">Keyword</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px">
+                <div class="col-lg-12">
+                    <h5>Categories</h5>
+                    <hr>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Latest News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Celebrities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gossip</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wedding & Pre-Wedding</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px">
+                <div class="col-lg-12">
+                    <h5>Tags</h5>
+                    <hr>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h3><span class="badge black">New</span></h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h3><span class="badge black">New</span></h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h3><span class="badge black">New</span></h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h3><span class="badge black">New</span></h3>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 50px">
+                <img class="img-fluid" src="http://res.cloudinary.com/sammiestarks/image/upload/v1515152460/jumiaAd_lqa9gr.jpg" alt="Chania" style="height: 296px; width: 336px">
+            </div>
+            <!--<div class="col-md-12 sideNews">
+              <h2>Categories</h2>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Celebrities</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Lifestyle</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Gossip</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Music</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link hoverable" href="#">Wedding/Pre-Wedding</a>
+                  </li>
+              </ul>
+          </div>-->
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--Modal: Subscription From-->
+<div mdbModal #form="mdb-modal" class="modal fade" id="modalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header black darken-3 white-text">
+                <h4 class="title"><i class="fa fa-newspaper-o"></i> I Report form</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mb-0">
+
+                <div class="md-form">
+                    <i class="fa fa-pencil prefix"></i>
+                    <textarea mdbActive type="text" id="form8" class="md-textarea"></textarea>
+                    <label for="form8">Please write your news here</label>
+                </div>
+
+                <div class="md-form form-sm">
+                    <i class="fa fa-3x fa-camera" aria-hidden="true"></i>
+                </div>
+
+                <div class="text-center mt-1-half">
+                    <button class="btn btn-info mb-1 waves-light" mdbRippleRadius>Submit <i class="fa fa-check ml-1"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Subscription From-->

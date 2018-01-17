@@ -1,16 +1,9 @@
-.music-main {
-    margin: 50px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-}
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-family: "Dosis", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 .headers {
@@ -79,40 +72,17 @@ h5 {
     padding-top: 7.3em;
 }
 
-
-a{
-    text-decoration: none;
-    color: grey;
+.main-socials i {
+    margin-left: -1em;
 }
 
-a:hover{
-    text-decoration: none;
-    color: darkred;
+.main-news-row>div {
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
-a:active{
-    text-decoration: none;
-    color: red;
-}
-.more-link {
-    font-family: 'Dosis', sans-serif !important;
-    font-stretch: extra-condensed !important;
-    font-weight: 800 !important;
-    color: rgba(130, 130, 130, 1);
-    font-size: 71%;
-    background-color: transparent;
-    text-decoration: none;
-    display: block;
-    margin-left: -0.8em;
-}
-.active{
-    text-decoration: none;
-    color: red;
-}
-
-.artistPage{
-    margin-top: 50px;
-    font-family: "Dosis", sans-serif;
+.main-news-row img {
+    height: 230px;
 }
 
 h1 {
@@ -120,26 +90,70 @@ h1 {
     text-transform: uppercase;
 }
 
-.celeb {
-    padding: 5px;
+.fa-heart {
+    color: #ff4444;
+    font-size: 20px;
 }
 
-.celebName {
-    padding-left: 34px;
-    padding-top: 5px;
-    padding: 10px;
-    font-family: 'Dosis', sans-serif !important;
-    color: black;
-    font-stretch: extra-condensed !important;
-    font-weight: 800 !important;
-    font-size: 130% !important;
+.fa-eye {
+    color: #00C851;
+    font-size: 20px;
+}
+
+.fa-share-alt {
+    font-size: 20px;
+}
+
+.socialClicks {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.card-body {
+    margin-bottom: 0;
+}
+
+.sideNews {
+    font-family: "Dosis", sans-serif;
+    text-align: right;
+}
+
+.sideNews h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.sideNews ul li a {
+    margin: 10px;
+    font-weight: 600;
+}
+
+.card {
+    img {
+        height: 11em;
+    }
+    height: 500px;
+    margin: 0 0 2em 0;
     p {
-        text-transform: uppercase;
-        margin-top: -0.4em;
-        font-family: 'Dosis', sans-serif !important;
-        font-stretch: extra-expanded !important;
-        font-weight: 400 !important;
-        font-size: 60% !important;
+        font-size: 80%
+    }
+    h4 {
+        font-size: 110%;
     }
 }
 
+.back-cover {
+    background-image: url(http://res.cloudinary.com/sammiestarks/image/upload/v1515062037/nigerian-artist-poster_nzraba.jpg);
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    // position: relative;
+    .irep-add {
+        // position: absolute;
+        // bottom: -10px;
+        // right: 50px;
+    }
+}

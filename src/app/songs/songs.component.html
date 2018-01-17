@@ -1,12 +1,12 @@
 <div class="container">
-    <div class="row newsContent mt-md-3 mb-3">
-        <div class="col-lg-8">
-            <h4 class=" mt-4 sub-headers">
-                Artists
+    <div class="row newsContent mt-md-4 mb-4">
+        <div class="col-lg-12">
+            <h4 class=" mt-4 mb-4 sub-headers">
+                Top Songs
             </h4>
         </div>
         <div class="row">
-            <div class="col-md-9 home-components-layout">
+            <div class="col-md-12 home-components-layout">
                 <ul class="nav NewsNav">
                     <li class="nav-item">
                         <a class="nav-link active " href="#">#Hot</a>
@@ -18,20 +18,23 @@
                         <a class="nav-link " href="#">#Popular</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right-fix" href="#">View All
-                                                    <i class="fa fa-chevron-right" ></i>
-                                                </a>
+                        <a class="nav-link " href="#">#Genre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link right-fix" href="#" [routerLink]="[ '/view-all/' ]">View All
+                                                <i class="fa fa-chevron-right" ></i>
+                                            </a>
                     </li>
                 </ul>
                 <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
                     <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                        <a [routerLink]="[ '/artist-detail/' ]">
+                        <a [routerLink]="[ '/song/' ]">
                             <img src="{{Tile}}" height="250px" width="100%" />
                             <div class="overlay">
                                 <div class="btn btn-rounded play-music">
-                                    <p>View
-                                        <i class=" mx-md-2 fa fa-user"></i>
+                                    <p>Listen
+                                        <i class=" mx-md-2 fa fa-play"></i>
                                     </p>
                                 </div>
                             </div>
@@ -44,9 +47,7 @@
                     <button NgxCarouselNext class='rightRs'>&gt;</button>
                 </ngx-carousel>
             </div>
-            <div class="col-md-3 mt-md-3 spot-artist d-sm-none d-md-block d-none d-sm-block adverts-side">
-                <!-- !!adverts -->
-            </div>
+
 
 
 

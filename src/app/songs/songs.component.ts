@@ -1,31 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
-@Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.scss']
-})
-export class MoviesComponent implements OnInit {
 
+@Component({
+  selector: 'app-songs',
+  templateUrl: './songs.component.html',
+  styleUrls: ['./songs.component.scss']
+})
+export class SongsComponent implements OnInit {
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
  public evt;
   ngOnInit(){
     this.carouselTileItems = [
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262365/Wedding-party-2_lrj8is.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262337/bama_wesgg8.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513263115/mywifeandi_mijkuk.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/c_scale,w_1019/v1513262376/triptojamaica_pjjggf.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262337/bama_wesgg8.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513263115/mywifeandi_mijkuk.jpg',
-      'http://res.cloudinary.com/sammiestarks/image/upload/v1513262351/010-days-in-suncity-1-2017-latest-nigerian-nollywood-movie-wapbaze-com-July-Saturday-08-07-2017LoadedNG.com__wzcbcp.jpg'
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/SFTOS_atmbz4.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466006/reminese_xpmwwx.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465997/falz_nwwjhn.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/kissDaniel_vz55ws.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466007/runtown_ji2swb.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512465994/davidoFia_icl9w6.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466008/skales_olexmz.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466009/tuface_lnba8v.jpg",
+        "http://res.cloudinary.com/sammiestarks/image/upload/v1512466003/lilkesh_bubu6t.jpg"
     ];
  
     this.carouselTile = {
-      grid: {xs: 1, sm: 2, md: 3, lg: 4, all: 0},
-      slide: 2,
-      speed: 400,
-      animation: 'lazy',
+      grid: {xs: 1, sm: 1, md: 3, lg: 6, all: 0},
+      slide: 3,
+      speed: 500,
+      animation: 'stagger',
       point: {
         visible: true,
         pointStyles: `
@@ -53,26 +55,36 @@ export class MoviesComponent implements OnInit {
           }
         `
       },
+      interval: 2000,
       load: 2,
+      loop: true,
       touch: true,
       easing: 'ease'
     }
   }
- 
+
   public carouselTileLoad(
-    evt: any
+    e: any
   ) {
- this.evt = evt;
+ this.evt = e;
        const len = this.carouselTileItems.length
        if (len <= 4) {
          for (let i = len; i < len + 4; i++) {
            this.carouselTileItems.push(i);
          }
        }
-    
+
      }
 
      // carouselLoad will trigger this funnction when your load value reaches
      // it is helps to load the data by parts to increase the performance of the app
      // must use feature to all carousel
 }
+
+
+
+
+
+
+
+

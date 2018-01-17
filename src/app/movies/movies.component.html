@@ -6,7 +6,7 @@
             </h4>
         </div>
         <div class="row">
-            <div class="col-md-9 home-components-layout">
+            <div class="col-md-8 home-components-layout">
                 <ul class="nav NewsNav">
                     <li class="nav-item">
                         <a class="nav-link active " href="#">#Hot</a>
@@ -26,7 +26,7 @@
                 <ngx-carousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad($event)">
 
                     <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                        <a [routerLink]="[ '/artist-detail/' ]">
+                        <a [routerLink]="[ '/movie-details/' ]">
                             <img src="{{Tile}}" height="250px" width="100%" />
                             <div class="overlay">
                                 <div class="btn btn-rounded play-music">
@@ -45,6 +45,7 @@
                 </ngx-carousel>
             </div>
 
+            <div class="col-md-1"></div>
             <div class="col-md-3 mt-md-3 spot-artist d-sm-none d-md-block d-none d-sm-block adverts-side">
                 <!-- !!adverts -->
             </div>

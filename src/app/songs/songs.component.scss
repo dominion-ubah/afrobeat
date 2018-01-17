@@ -1,9 +1,12 @@
-.newsContent {
-    padding-bottom: 5em;
-    font-size: 80%;
-    font-family: 'Dosis', sans-serif !important;
-    font-stretch: extra-expanded;
-    // font-weight: 800 !important;
+// .music-main {
+//     margin: 50px;
+//     padding: 5px;
+//     font-family: "Dosis", sans-serif;
+// }
+h4 {
+    font-weight: 600;
+    font-size: 28px;
+    font-family: "Dosis", sans-serif;
 }
 
 .sub-headers {
@@ -11,6 +14,143 @@
     font-stretch: extra-expanded !important;
     font-weight: 700 !important;
     font-size: 160%;
+}
+
+ngx-tile::ng-deep {
+    position: relative;
+    .overlay {
+        opacity: 0;
+        background-image: radial-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0) 0%, rgba(219, 219, 219, 0) 100%);
+        position: absolute;
+        top: 5px;
+        width: 15em;
+        height: 25em;
+        .play-music {
+            display: none;
+            background-image: linear-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0.2) 0%, rgba(219, 219, 219, 0.7) 100%);
+            padding: 0.4em;
+            position: absolute;
+            top: 105px;
+            left: 40px;
+            transition: 500ms ease-in;
+            p {
+                font-size: 120%;
+                font-weight: bolder;
+                padding: 0;
+                margin: 0;
+                transition: 500ms ease-in;
+            }
+        }
+        transition: 900ms ease-in-out;
+    }
+    .overlay:hover {
+        opacity: 1;
+        transition: 500ms ease-in;
+        background-image: radial-gradient(farthest-corner at 40px 40px, rgba(189, 189, 189, 0.2) 0%, rgba(219, 219, 219, 0.7) 100%);
+        // position: absolute;
+        // top: 5px;
+        // width: 15em;
+        // height: 28em;
+        .play-music {
+            display: block;
+            transition: 500ms ease-in-out;
+        }
+        transition: 500ms ease-in-out;
+    }
+}
+
+.NewsNav {
+    text-transform: uppercase;
+    a:link {
+        color: grey;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: grey;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: darkred;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:active {
+        color: darkred;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .music-main-page {
+        margin: 15px;
+        padding: 2px;
+    }
+    .home-components-layout {
+        margin-left: 0;
+    }
+    img {
+        height: 250px;
+        width: 100%;
+    }
+    .NewsNav li a {
+        color: grey;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    .NewsNav li a:active {
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .music-main-page {
+        margin: 15px;
+        padding: 2px;
+    }
+    .home-components-layout {
+        margin-left: 0;
+    }
+    img {
+        height: 250px;
+        width: 100%;
+    }
+    .NewsNav li a {
+        color: grey;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    .NewsNav li a:hover {
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    .NewsNav li a:active {
+        color: red;
+        font-weight: bold;
+        font-size: x-small;
+    }
+}
+
+.newsContent {
+    padding-bottom: 2em;
+    font-size: 80%;
+    font-family: 'Dosis', sans-serif !important;
+    font-stretch: extra-expanded;
+    // font-weight: 800 !important;
 }
 
 ngx-carousel::ng-deep {
@@ -50,21 +190,18 @@ ngx-tile::ng-deep {
     visibility: hidden !important;
 }
 
-.more-link {
-    font-family: 'Dosis', sans-serif !important;
-    font-stretch: extra-condensed !important;
-    font-weight: 800 !important;
-    color: rgba(130, 130, 130, 1);
-    font-size: 95%;
-    background-color: transparent;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-    // margin-left: -0.8em;
-}
-
 .spot-artist {
-    margin-top: -3em;
+    .more-link {
+        font-family: 'Dosis', sans-serif !important;
+        font-stretch: extra-condensed !important;
+        font-weight: 800 !important;
+        color: rgba(130, 130, 130, 1);
+        font-size: 71%;
+        background-color: transparent;
+        text-decoration: none;
+        display: block;
+        margin-left: -0.8em;
+    }
     padding-left: 65px;
     padding-right: 2em;
     font-size: 20px;
@@ -91,14 +228,17 @@ ngx-tile::ng-deep {
     padding-top: 5px;
     padding: 10px;
     font-family: 'Dosis', sans-serif !important;
+    color: black;
     font-stretch: extra-condensed !important;
     font-weight: 800 !important;
+    font-size: 130% !important;
     p {
         text-transform: uppercase;
         margin-top: -0.4em;
         font-family: 'Dosis', sans-serif !important;
         font-stretch: extra-expanded !important;
         font-weight: 400 !important;
+        font-size: 60% !important;
     }
 }
 
@@ -109,26 +249,16 @@ h6 {
 }
 
 .socials {
-    height: 150px;
+    height: 300px;
     overflow-y: scroll;
-    border: 1px solid lightgray;
 }
 
-.tweets {
-    background-image: url("https://www.hallaminternet.com/assets/Opta-Joe-Twitter-Feed.jpg");
+.fb {
+    background-image: url("https://www.wingnut-websites.com/images/Tweaks/Facebook-Integration.png");
+    background-color: blue;
     background-size: contain;
-    background-color: turquoise;
     height: 400px;
     width: 100%;
-}
-
-.event-main-img {
-    background-image: url("http://res.cloudinary.com/sammiestarks/image/upload/v1513590838/bankyw-wedding_h9s51i.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    background-size: contain;
 }
 
 .NewsNav {
@@ -203,7 +333,7 @@ h6 {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
     .newsContent {
-        margin: 15px;
+        margin: 5px;
         padding: 2px;
     }
     .home-components-layout {
@@ -241,12 +371,6 @@ h6 {
         font-size: x-small;
         background-color: transparent;
     }
-}
-
-.adverts-wide {
-    background-image: url("https://chinabambi.files.wordpress.com/2014/11/hd200-lores.jpg");
-    height: 20em;
-    background-size: cover;
 }
 
 // Medium devices (tablets, 768px and up)
